@@ -6,12 +6,8 @@
       <image mode="widthFix" class="show-city-icon" src="../../../image/down.png"></image>
     </view>-->
   </view>
-  <navigator url="/page/DFS/coupon-on/coupon-on" wx:if="{{coupon_status == 1}}">
-    <image class="home-banner" mode="widthFix" src="http://ww2.sinaimg.cn/large/006tKfTcgy1fesmny5bb4j30v90gl133.jpg"></image>
-  </navigator>
-  <navigator url="/page/DFS/coupon-off/coupon-off" wx:if="{{coupon_status == 0}}">
-    <image class="home-banner" mode="widthFix" src="http://ww2.sinaimg.cn/large/006tKfTcgy1fesmny5bb4j30v90gl133.jpg"></image>
-  </navigator>  
+  <image class="home-banner" mode="widthFix" src="http://ww2.sinaimg.cn/large/006tKfTcgy1fesmny5bb4j30v90gl133.jpg"></image>
+
   <!--<navigator url="../search-page/search-page">
     <image mode="widthFix" class="search-bar" src="http://ww3.sinaimg.cn/large/006tKfTcgy1ff8j5hyh6dj30d001ewec.jpg"></image>
     <view class="clearfix"></view>
@@ -26,7 +22,7 @@
       <navigator url="../product/product?product_id={{item.product_id}}" class="scroll-view-item_H scroll-item" wx:for="{{selected_list}}">
         <image mode="widthFix" class="item-img" src="{{item.enter_banner}}"></image>
         <view class="item-title">{{item.product_name}}</view>
-        <view class="item-price">${{item.price}}</view>
+        <view class="item-price">￥{{item.price}}</view>
       </navigator>
     </scroll-view>
   </view>
@@ -41,7 +37,7 @@
       <navigator url="../product/product?product_id={{item.product_id}}" class="scroll-view-item_H scroll-item" wx:for="{{idx.goods}}">
         <image mode="widthFix" class="item-img" src="{{item.enter_banner}}"></image>
         <view class="item-title">{{item.product_name}}</view>
-        <view class="item-price">${{item.price}}</view>
+        <view class="item-price">￥{{item.price}}</view>
       </navigator>
     </scroll-view>
     <view class="cutline"></view>

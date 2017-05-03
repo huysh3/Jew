@@ -8,8 +8,8 @@
     <view class="product-info-content">
       <view class="product-brand">{{item.brand_name}}</view>
       <view class="product-name">{{item.name}}</view>
-      <view class="product-price">${{item.price}}</view>
-      <view class="product-rmb">(￥{{item.RMB - item.RMB % 1}})</view>
+      <view class="product-price">￥{{item.price}}</view>
+      <!--<view class="product-rmb">(￥{{item.RMB - item.RMB % 1}})</view>-->
     </view>
   </navigator>
 </view>

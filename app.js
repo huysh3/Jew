@@ -56,7 +56,7 @@ App({
   getCartBadge: function() {
     var _this = this
     wx.request({
-      url: 'https://72762681.qcloud.la/Home/weapp/getCartNumber',
+      url: 'https://72762681.qcloud.la/Test/weapp/getCartNumber',
       data: {
         uid: wx.getStorageSync('uid')
       },

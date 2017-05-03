@@ -5,7 +5,7 @@
       输入联系电话以生成订单
     </view>
     <view class="modal-body">
-      <input type="text" class="phone-input"></input>
+      <input type="text" class="phone-input" auto-focus />
     </view>
     <view class="modal-footer">
       <view class="input-cancel-btn">

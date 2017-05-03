@@ -6,7 +6,7 @@
     <view class="desc-content">
       <view class="item-name">{{item.product.name}}</view>
       <view class="item-brand">{{item.product.brand_name}}</view>
-      <view class="item-price">${{item.product.price}}</view>
+      <view class="item-price">￥{{item.product.price}}</view>
       <view class="counter">
         <view data-index="{{index}}" bindtap="orderChange" data-id="{{item.order.id}}" data-option="-1" class="decr">-</view>
         <view class="number">{{item.order.number}}</view>
@@ -24,8 +24,8 @@
     <view class="top-content">
       <view class="title">总价</view>
       <view class="price-content">
-        <view class="price">${{total_price}}</view>
-        <view class="rmb">(￥{{total_price_rmb}})</view>
+        <view class="price">￥{{total_price}}</view>
+        <!--<view class="rmb">(￥{{total_price_rmb}})</view>-->
       </view>
     </view>
     <view class="options-content">

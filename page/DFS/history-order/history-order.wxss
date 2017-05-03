@@ -81,12 +81,12 @@
 
 .brand-name,
 .product-name {
-  padding-right: 200rpx;
+  padding-right:250rpx;
 }
 
 .number {
   position: absolute;
-  right: 120rpx;
+  right: 180rpx;
   bottom: 20rpx;
 }
 
