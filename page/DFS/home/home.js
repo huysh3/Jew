@@ -17,8 +17,9 @@ Page({
     shopInfo: {},
     autoplay: true,
     interval: 5000,
-    duration: 400,    
+    duration: 300,    
     currentShop: '',
+    banner: [],
     shopListState: false
   },
   onShow: function() {
@@ -28,6 +29,7 @@ Page({
     // this.getCouponStatus()
     this.setData({ "footbarState.cartBadgeNum": wx.getStorageSync('cartBadgeNum') })
     wx.setStorageSync('tabStatus', 'aboutDFS')    
+    this.getBanner()
     this.getShopInfo()
     this.getShopList()
     this.getSlideShow()
@@ -46,6 +48,20 @@ Page({
         })
       },
       fail(error) {
+      }
+    })
+  },
+  getBanner: function() {
+    let _this = this;
+    wx.request({
+      url: domain + '/Test/Banner/getBanner',
+      success(res) {
+        console.log('------------------------------------');
+        console.log(res.data);
+        _this.setData({
+          banner: res.data
+        })
+        console.log('------------------------------------');
       }
     })
   },

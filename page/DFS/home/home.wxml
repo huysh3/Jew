@@ -1,17 +1,21 @@
 <view class="page">
   <view class="top-content">
     <image class="dfs-banner" mode="widthFix" src="{{shopInfo.header_banner}}"></image>
-    <!--<view class="show-city-list" bindtap="changeShopListState">
-      <view class="text">{{currentShop}}</view>
-      <image mode="widthFix" class="show-city-icon" src="../../../image/down.png"></image>
-    </view>-->
   </view>
-  <image class="home-banner" mode="widthFix" src="http://ww2.sinaimg.cn/large/006tKfTcgy1fesmny5bb4j30v90gl133.jpg"></image>
-
-  <!--<navigator url="../search-page/search-page">
-    <image mode="widthFix" class="search-bar" src="http://ww3.sinaimg.cn/large/006tKfTcgy1ff8j5hyh6dj30d001ewec.jpg"></image>
-    <view class="clearfix"></view>
-  </navigator>-->
+  <swiper class="header" 
+          indicator-dots="{{indicatorDots}}" 
+          autoplay="{{autoplay}}" 
+          interval="{{interval}}" 
+          loop="true" 
+          duration="{{duration}}">
+      <block wx:for="{{banner}}">
+          <swiper-item>
+              <view class="swipe-content">
+                  <image class="home-banner" mode="widthFix" src="{{item.img_url}}"></image>
+              </view>
+          </swiper-item>
+      </block>
+  </swiper>
   <view class="middle-content">
     <navigator url="../search-page/search-page" class="left-part"><image class="icon" src="../../../image/search.png"></image>搜索</navigator>
     <navigator url="../city-list/city-list" class="right-part"><image class="icon" src="../../../image/location.png"></image>商店列表</navigator>
@@ -43,7 +47,7 @@
     <view class="cutline"></view>
   </view>
 
-  <view class="desc-content">
+  <!--<view class="desc-content">
     <image mode="widthFix" class="desc-img" bindtap="viewLocation" src="https://om536p71r.qnssl.com/shop_address.png"></image>
     <view class="desc-text-content">
       <view class="location">{{shopInfo.area}} {{shopInfo.address}}</view>
@@ -52,7 +56,7 @@
     <navigator url="/page/DFS/tips/tips" class="show-tips">
       使用规范
     </navigator>
-  </view>
+  </view>-->
 
 
   <!--<view class="select-city-modal" wx:if="{{shopListState}}">

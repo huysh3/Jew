@@ -14,3 +14,12 @@ page {
 .logo-wall {
   width: 750rpx;
 }
+
+.full {
+  width: 750rpx;
+}
+
+.footer-banner {
+  float: left;
+  width: 750rpx;
+}
