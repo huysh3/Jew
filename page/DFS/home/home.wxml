@@ -1,0 +1,80 @@
+<view class="page">
+  <view class="top-content">
+    <image class="dfs-banner" mode="widthFix" src="{{shopInfo.header_banner}}"></image>
+    <!--<view class="show-city-list" bindtap="changeShopListState">
+      <view class="text">{{currentShop}}</view>
+      <image mode="widthFix" class="show-city-icon" src="../../../image/down.png"></image>
+    </view>-->
+  </view>
+  <navigator url="/page/DFS/coupon-on/coupon-on" wx:if="{{coupon_status == 1}}">
+    <image class="home-banner" mode="widthFix" src="http://ww2.sinaimg.cn/large/006tKfTcgy1fesmny5bb4j30v90gl133.jpg"></image>
+  </navigator>
+  <navigator url="/page/DFS/coupon-off/coupon-off" wx:if="{{coupon_status == 0}}">
+    <image class="home-banner" mode="widthFix" src="http://ww2.sinaimg.cn/large/006tKfTcgy1fesmny5bb4j30v90gl133.jpg"></image>
+  </navigator>  
+  <!--<navigator url="../search-page/search-page">
+    <image mode="widthFix" class="search-bar" src="http://ww3.sinaimg.cn/large/006tKfTcgy1ff8j5hyh6dj30d001ewec.jpg"></image>
+    <view class="clearfix"></view>
+  </navigator>-->
+  <view class="middle-content">
+    <navigator url="../search-page/search-page" class="left-part"><image class="icon" src="../../../image/search.png"></image>搜索</navigator>
+    <navigator url="../city-list/city-list" class="right-part"><image class="icon" src="../../../image/location.png"></image>商店列表</navigator>
+  </view>
+  <view class="selected-content">
+    <view class="title">为您甄选</view>
+    <scroll-view class="scroll-view_H" scroll-x="true">
+      <navigator url="../product/product?product_id={{item.product_id}}" class="scroll-view-item_H scroll-item" wx:for="{{selected_list}}">
+        <image mode="widthFix" class="item-img" src="{{item.enter_banner}}"></image>
+        <view class="item-title">{{item.product_name}}</view>
+        <view class="item-price">${{item.price}}</view>
+      </navigator>
+    </scroll-view>
+  </view>
+
+  <view class="cutline"></view>
+
+  <view class="class-content" wx:for="{{classList}}" wx:for-item="idx">
+    <navigator url="../product-list/product-list?class_name={{idx.class_name}}">
+      <image mode="widthFix" class="class-banner" src="{{idx.class_banner}}"></image>
+    </navigator>
+    <scroll-view class="scroll-view_H" scroll-x="true">
+      <navigator url="../product/product?product_id={{item.product_id}}" class="scroll-view-item_H scroll-item" wx:for="{{idx.goods}}">
+        <image mode="widthFix" class="item-img" src="{{item.enter_banner}}"></image>
+        <view class="item-title">{{item.product_name}}</view>
+        <view class="item-price">${{item.price}}</view>
+      </navigator>
+    </scroll-view>
+    <view class="cutline"></view>
+  </view>
+
+  <view class="desc-content">
+    <image mode="widthFix" class="desc-img" bindtap="viewLocation" src="https://om536p71r.qnssl.com/shop_address.png"></image>
+    <view class="desc-text-content">
+      <view class="location">{{shopInfo.area}} {{shopInfo.address}}</view>
+      <view class="business-hours">{{shopInfo.open_hours}}</view>
+    </view>
+    <navigator url="/page/DFS/tips/tips" class="show-tips">
+      使用规范
+    </navigator>
+  </view>
+
+
+  <!--<view class="select-city-modal" wx:if="{{shopListState}}">
+    <view data-id="{{item.id}}" 
+          data-shopname="{{item.name}}"
+          class="city-item" 
+          hover-class="city-item-hover" 
+          bindtap="changeShop" 
+          wx:for="{{shopList}}">
+      <image mode="widthFix" src="{{item.enter_banner}}" class="city-image"></image>
+      <view class="city-name">{{item.name}}</view>
+    </view>
+  </view>-->
+
+</view>
+
+
+
+<view style="background-color: #fff;" class="footbar-takeplace"></view>
+<import src="../../component/footbar/footbar.wxml"/>
+<template is="footbar" data="{{footbarState}}"/>

@@ -1,0 +1,25 @@
+<view class="services-container">
+  <view class="main-content">
+    <view class="desc">我们真诚为您服务</view>
+    <view class="text-content">
+      <view class="tips-title">北京时间</view>
+      <view class="tips-text">周一至周五 9:00~18:00</view>
+    </view>
+    <image mode="widthFix" class="left-part" src="../../../image/services_left.png"></image>
+    <image mode="widthFix" bindtap="phoneCall" class="right-part" src="../../../image/services_right.png"></image>
+  </view>
+  <!--<view class="main-content">
+    <image class="avatar" src="https://om536p71r.qnssl.com/Woman.png"></image>
+    <view class="line-through"></view>
+    <image class="contact-time" src="https://om536p71r.qnssl.com/CallingTimes%20.png"></image>
+    <view class="services-content">
+      <image class="chat-img" src="https://om536p71r.qnssl.com/chat_now.png"></image>
+      <view class="title">在线客服</view>
+    </view>
+    <view class="call-content">
+      <image bindtap="phoneCall" class="call-img" src="https://om536p71r.qnssl.com/call_now.png"></image>
+      <view class="title">电话客服</view>
+    </view>
+  </view>-->
+  <contact-button class="contact-btn" type="default-light" size="40" session-from="weapp"></contact-button>
+</view>

@@ -1,0 +1,66 @@
+<view class="page">
+  <image mode="widthFix" bindtap="routerGoHome" class="dfs-banner" src="{{shopInfo.header_banner}}"></image>
+
+  <view class="item-content" wx:for="{{orderList}}">
+    <image mode="widthFix" class="item-image" src="{{item.product.order_banner}}"></image>
+    <view class="desc-content">
+      <view class="item-name">{{item.product.name}}</view>
+      <view class="item-brand">{{item.product.brand_name}}</view>
+      <view class="item-price">${{item.product.price}}</view>
+      <view class="counter">
+        <view data-index="{{index}}" bindtap="orderChange" data-id="{{item.order.id}}" data-option="-1" class="decr">-</view>
+        <view class="number">{{item.order.number}}</view>
+        <view data-index="{{index}}" bindtap="orderChange" data-id="{{item.order.id}}" data-option="1" class="incr">+</view>
+      </view>
+    </view>
+    <view class="clearfix"></view>
+    <image class="delete-btn" src="../../../image/x.png" data-id="{{item.order.id}}" catchtap="deleteOrder"></image>
+  </view>
+
+  <view class="footbar-takeplace" style="background-color: #f0f0f0;"></view>
+  <view class="footbar-takeplace" style="background-color: #f0f0f0;"></view>
+
+  <view class="footer-content">
+    <view class="top-content">
+      <view class="title">总价</view>
+      <view class="price-content">
+        <view class="price">${{total_price}}</view>
+        <view class="rmb">(￥{{total_price_rmb}})</view>
+      </view>
+    </view>
+    <view class="options-content">
+      <view class="confirm-btn" bindtap="handleCombineBtn">预留订单</view>
+      <view class="pay-btn" bindtap="handleConfirmBtn"><image mode="widthFix" class="wechat-icon" src="../../../image/wechat.png"></image>微信支付</view>
+    </view>
+  </view>
+
+  <import src="../../component/done-model/done-model.wxml"/>
+  <template is="done-model" data="{{modalProps}}" wx:if="{{doneModalStatus}}"/>
+
+  <view name="input-model" wx:if="{{inputModalState}}">
+    <view class="mask"></view>
+    <view class="input-modal-content">
+      <view class="input-modal-header">
+        输入联系电话以生成订单
+      </view>
+      <view class="modal-body">
+        <input bindinput="bindKeyInput" type="text" class="phone-input"></input>
+      </view>
+      <view class="modal-footer">
+        <view class="input-cancel-btn" bindtap="inputModalCancel">
+          取消
+        </view>
+        <view class="input-confirm-btn" bindtap="confirmOrder">
+          确认
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<import src="../../component/service-btn/service-btn.wxml"/>
+<template is="service-btn"/>
+
+<view class="footbar-takeplace" style="background-color: #f0f0f0;"></view>
+<import src="../../component/footbar/footbar.wxml"/>
+<template is="footbar" data="{{footbarState}}"/>

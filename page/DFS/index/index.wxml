@@ -1,0 +1,53 @@
+<view class="index">
+    <view class="head">
+        <view class="title">夜夜H5</view>
+        <view class="desc">小程序Demo</view>
+    </view>
+
+    <view class="body">
+        <view class="widgets">
+            <view class="widgets__item">
+                <view id="content" class="widgets__info {{contentShow ? 'widgets__info_show' : ''}}" bindtap="widgetsToggle">
+                    <text class="widgets__info-name">套餐</text>
+                    <image class="widgets__info-img" src="../resources/kind/form.png" background-size="cover" />
+                </view>
+                <view class="widgets__list {{contentShow ? 'widgets__list_show' : ''}}">
+                    <navigator open-type="redirectTo" url="../product-list/product-list" class="widget">
+                        <text class="widget__name">套餐列表</text>
+                        <image class="widget__arrow" src="../resources/arrow.png" background-size="cover" />
+                        <view class="widget__line"></view>
+                    </navigator>
+                    <navigator open-type="redirectTo" url="../order-center/order-center" class="widget">
+                        <text class="widget__name">订单列表</text>
+                        <image class="widget__arrow" src="../resources/arrow.png" background-size="cover" />
+                        <view class="widget__line"></view>
+                    </navigator>
+                </view>
+            </view>
+            <view class="widgets__item">
+                <view id="media" class="widgets__info {{mediaShow ? 'widgets__info_show' : ''}}" bindtap="widgetsToggle">
+                    <text class="widgets__info-name">个人中心</text>
+                    <image class="widgets__info-img" src="../resources/kind/media.png" background-size="cover" />
+                </view>
+                <view class="widgets__list {{mediaShow ? 'widgets__list_show' : ''}}">
+                    <view class="widgets__list-inner {{mediaShow ? 'widgets__list-inner_show' : ''}}">
+                        <navigator open-type="redirectTo" url="component-pages/wx-image/wx-image" class="widget">
+                            <text class="widget__name">订单列表</text>
+                            <image class="widget__arrow" src="../resources/arrow.png" background-size="cover" />
+                            <view class="widget__line"></view>
+                        </navigator>
+                        <navigator open-type="redirectTo" url="-pages/wx-audio/wx-audio" class="widget">
+                            <text class="widget__name">钱包</text>
+                            <image class="widget__arrow" src="../resources/arrow.png" background-size="cover" />
+                            <view class="widget__line"></view>
+                        </navigator>
+                        <navigator open-type="redirectTo" url="component-pages/wx-video/wx-video" class="widget">
+                            <text class="widget__name">YIP特权</text>
+                            <image class="widget__arrow" src="../resources/arrow.png" background-size="cover" />
+                        </navigator>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

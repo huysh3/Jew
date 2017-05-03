@@ -1,0 +1,47 @@
+.center-btn {
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: #B62A18;
+  color: #fff;
+  text-align: center;
+  width: 710rpx;
+  margin-left: 20rpx;
+}
+
+.modal-content {
+  width: 500rpx;
+  padding: 30rpx;
+  background-color: #fff;
+  border: 2px solid #999;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  box-shadow:4rpx 4rpx 8rpx #999;
+}
+
+.modal-header {
+  border-bottom: 1px solid #999;
+}
+
+.modal-content .icon {
+  width: 80rpx;
+  height: 80rpx;
+  padding: 40rpx 0;
+}
+
+.modal-body {
+  padding-top: 30rpx;
+  font-size: 26rpx;
+  line-height: 50rpx;
+  color: #666;
+}
+
+.close-model {
+  position: absolute;
+  right: 20rpx;
+  top: 20rpx;
+  width: 28rpx;
+  height: 28rpx;
+}

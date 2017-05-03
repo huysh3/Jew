@@ -1,0 +1,36 @@
+{
+    "pages": [
+        "page/DFS/home/home",
+        "page/DFS/city-list/city-list",
+        "page/DFS/shop-list/shop-list",
+        "page/DFS/search-page/search-page",
+        "page/DFS/services/services",
+        "page/DFS/product-cart/product-cart",
+        "page/DFS/history-orders/history-orders",
+        "page/DFS/product/product",
+        "page/DFS/class-list/class-list",
+        "page/DFS/product-list/product-list",
+        "page/DFS/order-center/order-center",
+        "page/DFS/touchEvent/touchEvent",
+        "page/DFS/promotions/promotions",
+        "page/DFS/tips/tips",
+        "page/DFS/coupon-off/coupon-off",
+        "page/DFS/coupon-on/coupon-on",
+        "page/DFS/history-order/history-order",
+        "page/DFS/order-confirm/order-confirm"
+    ],
+    "window": {
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "SWAROVSKI",
+        "navigationBarBackgroundColor": "#fff",
+        "backgroundColor": "#333",
+        "enablePullDownRefresh": false
+    },
+    "networkTimeout": {
+        "request": 10000,
+        "connectSocket": 10000,
+        "uploadFile": 10000,
+        "downloadFile": 10000
+    },
+    "debug": true
+}

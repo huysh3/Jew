@@ -1,0 +1,19 @@
+<template name="input-model">
+  <view class="mask"></view>
+  <view class="input-modal-content">
+    <view class="input-modal-header">
+      输入联系电话以生成订单
+    </view>
+    <view class="modal-body">
+      <input type="text" class="phone-input"></input>
+    </view>
+    <view class="modal-footer">
+      <view class="input-cancel-btn">
+        取消
+      </view>
+      <view class="input-confirm-btn">
+        确认
+      </view>
+    </view>
+  </view>
+</template>

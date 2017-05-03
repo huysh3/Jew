@@ -1,0 +1,99 @@
+.order-confirm-container {
+  min-height: 100vh;
+  width: 750rpx;
+  background-color: #f0f0f0;
+}
+
+.header,
+.order-info,
+.phone-num {
+  margin-bottom: 20rpx;
+}
+
+.order-info::after {
+  content:'.';
+  visibility:hidden;
+  display:block;
+  height:0;
+  clear:both;
+}
+
+.table-cell {
+  background-color: #fff;
+}
+
+.header {
+  background-color: #fff;
+  padding: 30rpx;
+}
+
+.header image {
+  width: 330rpx;
+  height: 204rpx;
+  margin-right: 20rpx;
+  float: left;
+}
+
+.header::after {
+  content: '.';
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.header .title {
+  margin-top: 20rpx;
+  float: left;
+  width: 300rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.header .subtitle {
+  /*width: 350rpx;*/
+  float: left;
+  font-size: 28rpx;
+  color: #999;
+  margin-top: 20rpx;
+}
+
+.table-cell {
+  font-size: 28rpx;
+  padding: 0 30rpx;
+  display: flex;
+  height: 110rpx;
+  line-height: 110rpx;
+}
+
+.table-cell .left-part,
+.table-cell .right-part {
+  flex: 1;
+}
+
+.table-cell .left-part {
+  text-align: left;
+}
+
+.table-cell .right-part {
+  text-align: right;
+}
+
+.voucher-discount .left-part,
+.voucher-discount .right-part {
+  border-bottom: 1rpx solid #f0f0f0;
+}
+
+.footer {
+  display: block;
+  height: 100rpx;
+  line-height: 100rpx;
+  background-color: #2f2f3b;
+  color: #cca556;
+  font-weight: bold;
+  position: fixed;
+  bottom: 0;
+  width: 750rpx;
+  font-size: 32rpx;
+  text-align: center;
+}

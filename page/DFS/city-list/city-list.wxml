@@ -1,0 +1,8 @@
+<view class="select-shop-container">
+  <view class="modal-header">
+    选择城市
+  </view>
+  <view class="item-content">
+    <navigator url="../shop-list/shop-list?city={{item}}" class="city-item" wx:for="{{cityList}}">{{item}}</navigator>
+  </view>
+</view>

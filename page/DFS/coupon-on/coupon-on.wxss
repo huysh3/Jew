@@ -1,0 +1,58 @@
+.coupon-on-container {
+  background-color: #f0f0f0;
+  min-height: 100vh;
+  text-align: center;
+  padding: 20rpx;
+}
+
+.main-content {
+  background-color: #fff;
+}
+
+.banner {
+  width: 710rpx;
+  height:455rpx;
+}
+
+input {
+  width: 500rpx;
+  background-color: #ccc;
+  box-shadow: 0 0 4rpx #f0f0f0;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin-left: 105rpx;
+  margin-top: 80rpx;
+}
+
+.qrcode {
+  width: 400rpx;
+  height: 400rpx;
+}
+.text-img {
+  width: 710rpx;
+  height: 921rpx;
+}
+
+.cutline {
+  width: 600rpx;
+  margin: 40rpx 55rpx;
+  height: 1rpx;
+  background-color: #000;
+}
+
+.text-content {
+  padding: 60rpx;
+  color: #333;
+  text-align: left;
+}
+
+.title {
+  font-size: 32rpx;
+  margin-bottom: 30rpx;
+  font-weight: bold;
+}
+
+.desc {
+  font-size: 28rpx;
+  line-height: 40rpx;
+}

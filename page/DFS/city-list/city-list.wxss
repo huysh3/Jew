@@ -1,0 +1,35 @@
+.select-shop-container {
+  width: 702rpx;
+  padding: 0 25rpx;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow: auto;
+}
+
+.select-shop-container .city-item {
+  width: 196rpx;
+  height: 60rpx;
+  background-color: #f0f0f0;
+  float: left;
+  margin: 20rpx auto;
+  margin-right: 50rpx;
+  text-align: center;
+  font-size: 24rpx;
+  color: #333;
+  line-height: 60rpx;
+  border: 1rpx solid #ccc;
+}
+
+.select-shop-container .modal-header {
+  border: none;
+  text-align: center;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+
+.select-shop-container .city-item:nth-child(3n) {
+  margin-right: 0;
+}

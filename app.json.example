@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "page/DFS/home/home",
+    "page/DFS/promotions/promotions",
+    "page/DFS/product-list/product-list",
+    "page/DFS/order-center/order-center",
+    "page/DFS/tips/tips",
+    "page/DFS/class-list/class-list",
+    "page/DFS/coupon-off/coupon-off",
+    "page/DFS/coupon-on/coupon-on",
+    "page/DFS/history-orders/history-orders",
+    "page/DFS/history-order/history-order",
+    "page/DFS/services/services",
+    "page/DFS/order-confirm/order-confirm",
+    "page/DFS/product/product",
+    "page/DFS/product-order/product-order"
+  ],
+  "window": {
+    "navigationBarTextStyle": "#fff",
+    "navigationBarTitleText": "DFS",
+    "navigationBarBackgroundColor": "#000",
+    "backgroundColor": "#333",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "borderStyle": "black",
+    "backgroundColor": "#000",
+    "color": "#999",
+    "selectedColor": "#B62A18",
+    "list": [{
+      "pagePath": "page/DFS/home/home",
+      "iconPath": "image/home-2.png",
+      "selectedIconPath": "image/home.png",
+      "text": "主页"
+    },{
+      "pagePath": "page/DFS/class-list/class-list",
+      "iconPath": "image/放大镜-2.png",
+      "selectedIconPath": "image/放大镜.png",
+      "text": "目录"
+    },{
+      "pagePath": "page/DFS/order-center/order-center",
+      "iconPath": "image/cart-2.png",
+      "selectedIconPath": "image/cart.png",
+      "text": "购物车"
+    },{
+      "pagePath": "page/DFS/history-orders/history-orders",
+      "iconPath": "image/客服-2.png",
+      "selectedIconPath": "image/客服.png",
+      "text": "我的"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

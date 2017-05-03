@@ -1,0 +1,190 @@
+.history-orders-container {
+  background-color: #f0f0f0;
+}
+
+page {
+  background-color: #f0f0f0;
+}
+
+.item-content {
+  padding: 0 20rpx;
+  background-color: #fff;
+  margin-bottom: 30rpx;
+}
+
+.item-header {
+  display: flex;
+  height: 70rpx;
+  line-height: 70rpx;
+}
+
+.item-header .title,
+.item-header .order-state {
+  flex: 1;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+
+.item-header .title {
+  font-size: 32rpx;
+  color: #000;
+  font-weight: bold;
+}
+
+.item-header .order-state {
+  font-size: 28rpx;
+  color: #B62A18;
+  text-align: right;
+}
+
+.scroll-content {
+  height: 200rpx;
+  display: block;
+  background-color: #fff;
+}
+
+.item-footer {
+  background-color: #fff;
+  height: 70rpx;
+  line-height: 70rpx;
+  border-top: 1rpx solid #f0f0f0;
+  display: flex;
+}
+
+.item-footer .price-content {
+  flex: 4;
+  display: flex;
+  font-size: 32rpx;
+}
+
+.item-footer .item-total-price {
+  margin-left: 20rpx;
+  color: #B62A18;
+}
+
+.item-footer .item-total-rmb {
+  font-size: 24rpx;
+  color: #999;
+  margin-left: 20rpx;
+}
+
+.item-footer .amount-content {
+  flex: 1;
+  text-align: right;
+  font-size: 24rpx;
+  color: #999;
+}
+
+.scroll-content .item-img {
+  width: 160rpx;
+  margin: 15rpx;
+  /*border: 1rpx solid #f0f0f0;*/
+}
+.scroll-view-item_H {
+  display: inline-block;
+}
+.scroll-view_H {
+  height: 200rpx;
+}
+
+
+
+/*.history-container {
+  overflow-x: hidden;
+  min-height: 100vh;
+  padding: 20rpx;
+  background-color: rgb(222, 222, 222);
+}
+
+.banner {
+  width: 750rpx;
+  height:110rpx;
+  position: relative;
+  top: -20rpx;
+  left: -20rpx;
+}
+
+.header {
+  background-color: #fff;
+  display: flex;
+  padding: 20rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.total {
+  flex: 1;
+}
+
+.title {
+  flex: 1;
+  text-align: right;
+}
+
+.order-card {
+  padding: 20rpx;
+  background-color: #fff;
+  margin-top: 20rpx;
+}
+
+.card-header {
+  display: flex;
+  font-size: 32rpx;
+}
+
+.order-id {
+  flex: 4;
+  color: #B62A18;
+}
+
+.order-total-price,
+.order-total-rmb {
+  color: #B62A18;
+  flex: 1;
+  text-align: right;
+}
+
+.order-total-rmb {
+  font-size: 24rpx;
+  position: relative;
+  top: 4rpx;
+  color: #999;
+}
+
+.order-card-item {
+  position: relative;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+  padding: 20rpx 0;
+}
+
+.order-card-content {
+  padding: 20rpx;
+  padding-bottom: 50rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  position: relative;
+}
+
+.product-name {
+  font-size: 26rpx;
+  padding-top: 10rpx;
+}
+
+.brand-name,
+.product-name {
+  padding-right: 200rpx;
+}
+
+.number {
+  position: absolute;
+  right: 120rpx;
+  bottom: 20rpx;
+}
+
+.show-more {
+  position: absolute;
+  bottom: 20rpx;
+  right: 20rpx;
+  font-size: 28rpx;
+  text-decoration: underline;
+}*/

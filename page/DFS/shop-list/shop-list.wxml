@@ -1,0 +1,10 @@
+<view class="select-shop-container">
+  <view class="header">商铺列表</view>
+  <view class="item-content">
+    <view class="shop-item" wx:for="{{shopList}}">
+      <view class="shop-name">{{item.name}}</view>
+      <view class="shop-locate">{{item.area}} {{item.address}}</view>
+      <view class="shop-locate">电话：{{item.contact_phone}}</view>
+    </view>
+  </view>
+</view>

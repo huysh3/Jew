@@ -1,0 +1,143 @@
+.page {
+  background-color: #f0f0f0;
+  min-height: 100vh;
+}
+
+.banner {
+  width: 750rpx;
+}
+
+/* .main-content {
+  background-color: rgb（221, 221, 221);
+  padding: 20rpx;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.nav-item {
+  width: 710rpx;
+  height: 120rpx;
+  line-height: 120rpx;
+  color: #fff;
+  font-weight: bold;
+  float: left;
+  background-color: #fff;
+}
+
+.brand {
+  font-family: "TimesNewRomanPSMT";
+}
+
+.name {
+  font-family: "FranklinITCStd-Light";
+}
+
+.item {
+  padding-top: 20rpx;
+  width: 710rpx;
+  background-color: #fff;
+  margin-bottom: 20rpx;
+  text-align: center;
+}
+
+.item image {
+  width: 300rpx;
+  height: 300rpx;
+  -o-object-fit: cover;
+  object-fit: cover;
+  margin-bottom: 20rpx;
+}
+
+.item .brand {
+  font-size: 32rpx;
+  text-align: center;
+}
+
+.item .name {
+  font-size: 36rpx;
+  font-weight: bold;
+  text-align: center;
+  margin: 10rpx 20rpx 20rpx 20rpx;
+  color: #333;
+}
+
+.price-content {
+  padding: 20rpx 20rpx;
+  text-align: left;
+}
+
+.cutline {
+  width: 670rpx;
+  margin-left: 20rpx;
+  height: 1rpx;
+  background-color: #f0f0f0;
+}
+
+.price-content .price,
+.price-content .worth {
+  font-family: "FranklinITCStd-Medium";
+  display: inline-block;
+}
+
+.price-content .price {
+  font-size: 48rpx;
+  color: #B62A18;
+  font-weight: bold;
+}
+
+.price-content .worth {
+  font-size: 30rpx;
+  color: #999;
+  text-decoration: line-through;
+  margin-left: 20rpx;
+  position: relative;
+  bottom: 5rpx;
+}
+
+.price-content .rmb {
+  font-size: 36rpx;
+  float: right;
+  display: inline-block;
+  font-weight: 200;
+} */
+.list-item {
+  width: 750rpx;
+  box-shadow: 0 0 5rpx rgba(0, 0, 0, 0.2);
+  margin-bottom: 40rpx;
+}
+
+.product-img {
+  height:600rpx;
+  width:600rpx;
+  background-color:#fff;
+  padding:0 75rpx;
+  margin-bottom: -8rpx;
+}
+
+.product-info-content {
+  background-color: #fff;
+  padding: 30rpx;
+  position: relative;
+}
+
+.product-brand {
+  font-size: 40rpx;
+  font-weight: bold;
+}
+
+.product-name {
+  font-size: 24rpx;
+  color: #999;
+  line-height: 40rpx;
+  padding: 20rpx 0;
+}
+
+.product-rmb {
+  position:absolute;
+  right:30rpx;
+  bottom:30rpx;
+  font-size:24rpx;
+  color:#999;
+}

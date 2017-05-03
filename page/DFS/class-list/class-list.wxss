@@ -1,0 +1,16 @@
+page {
+  background-color: #fff;
+}
+
+.nav-item {
+  float: left;
+  width: 375rpx;
+}
+
+.top-banner {
+  width: 750rpx;
+}
+
+.logo-wall {
+  width: 750rpx;
+}

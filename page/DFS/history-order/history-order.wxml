@@ -1,0 +1,19 @@
+<view class="history-container">
+  <image mode="widthFix" bindtap="routerGoHome" class="banner" src="{{shopInfo.header_banner}}"></image>
+  <view class="header">
+    <view class="total">合计{{orderInfo.order.length}}件商品</view>
+  </view>
+  <view class="order-card">
+    <view class="card-header">
+      <view class="order-id">单号: {{orderInfo.order[0].order_id}}</view>
+    </view>
+    <view class="order-card-content">
+      <view class="order-card-item" wx:for="{{orderInfo.order}}">
+        <view class="brand-name">{{item.product.brand_name}}</view>
+        <view class="product-name">{{item.product.name}}</view>
+        <view class="number">* {{item.number}}</view>
+        <view class="price">${{item.price}}</view>
+      </view>
+    </view>
+  </view>
+</view>

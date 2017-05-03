@@ -1,0 +1,153 @@
+.services-container {
+  width: 750rpx;
+  height: 100vh;
+  background: url('http://ww2.sinaimg.cn/large/006tKfTcgy1fespbvo9nvj30ku0w5e81.jpg') no-repeat;
+  background-size: 100% 100%;
+}
+
+.main-content {
+  width: 690rpx;
+  height: 530rpx;
+  background-color: #fff;
+  position: absolute;
+  left: 30rpx;
+  bottom: 60rpx;
+  border-radius: 20rpx;
+  box-shadow: 4rpx 4rpx 20rpx rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+.desc {
+  margin-top: 140rpx;
+}
+
+.text-content {
+  width: 690rpx;
+  position: absolute;
+  bottom: 40rpx;
+}
+
+.tips-title {
+  font-size: 32rpx;
+  color: #999;
+  font-weight: bold;
+}
+
+.tips-text {
+  font-size: 24rpx;
+  color: #999;
+  padding-top: 20rpx;
+}
+
+.left-part {
+  position: absolute;
+  width: 130rpx;
+  bottom: 142rpx;
+  left: 100rpx;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.right-part {
+  position: absolute;
+  width: 130rpx;
+  bottom: 142rpx;
+  right: 100rpx;
+}
+
+.contact-btn {
+  position:absolute;
+  bottom:285rpx;
+  left:168rpx;
+  color: rgba(0, 0, 0, 0);
+  z-index: 3;
+}
+/*.services-container {
+  width: 100vw;
+  min-height: 100vh;
+  background: url('https://om536p71r.qnssl.com/layer_pattern.png');
+  background-size: auto 27rpx;
+}
+
+.main-content {
+  padding-top: 170rpx;
+  text-align: center;
+}
+
+.avatar {
+  margin-top: 60rpx;
+  width: 250rpx;
+  height: 250rpx;
+  z-index: 5;
+  position: relative;
+}
+
+.desc {
+  text-align: center;
+  font-family: "FranklinITCStd-Light";
+}
+
+.banner {
+  width: 750rpx;
+  height: 110rpx;
+  float: left;
+}
+
+.line-through {
+  width: 4rpx;
+  height: 38vh;
+  background-color: rgb(200, 200, 200);
+  position: absolute;
+  left: 50%;
+  z-index: 2;
+  bottom: 150rpx;
+}
+
+.services-content .chat-img,
+.call-content .call-img {
+  width: 130rpx;
+  height: 130rpx;
+}
+
+.services-content {
+  position: absolute;
+  top:734rpx;
+  left:80rpx;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.call-content {
+  position: absolute;
+  top:732rpx;
+  right:80rpx;
+}
+
+.body-img {
+  width: 100vw;
+  height: 1000rpx;
+  float: left;
+}
+
+.title {
+  position: relative;
+  top: 20rpx;
+  font-family: "FranklinITCStd-Light";
+  font-size: 30rpx;
+}
+
+.contact-btn {
+  position:absolute;
+  bottom:285rpx;
+  left:168rpx;
+  color: rgba(0, 0, 0, 0);
+  z-index: 3;
+}
+
+.contact-time {
+  width: 750rpx;
+  height: 65rpx;
+  position: absolute;
+  bottom: 50rpx;
+  left: 0;
+}*/

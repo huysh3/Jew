@@ -1,0 +1,8 @@
+<template name="service-btn">
+  <view class="service-btn-container">
+    <navigator url="/page/DFS/services/services">
+      <image mode="widthFix" class="service-btn-icon" src="../../../image/services-btn.png" ></image>
+      <view class="service-btn-text">客服</view>
+    </navigator>
+  </view>
+</template>

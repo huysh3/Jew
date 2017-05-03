@@ -1,0 +1,332 @@
+.page {
+  background-color: #f0f0f0;
+}
+
+.item-content {
+  background-color: #fff;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+  position: relative;
+}
+
+.item-image {
+  width: 250rpx;
+  float: left;
+  margin-right: 20rpx;
+}
+
+.desc-content {
+  float: right;
+  width: 440rpx;
+}
+
+.desc-content .item-name {
+  font-size: 32rpx;
+  color: #000;
+  font-weight: bold;
+}
+
+.desc-content .item-brand {
+  font-size: 24rpx;
+  color: #999;
+  padding: 4rpx 0;
+}
+
+.desc-content .item-price {
+  font-size: 28rpx;
+  color: #B62A18;
+}
+
+.desc-content .counter {
+  margin-top: 20rpx;
+  display: flex;
+}
+
+.counter .decr,
+.counter .incr {
+  width: 35rpx;
+  height: 35rpx;
+  text-align: center;
+  line-height: 31rpx;
+  border: 1rpx solid #aaa;
+  border-radius: 3rpx;
+}
+
+.counter .number {
+  padding: 0 20rpx;
+  font-size: 28rpx;
+  position: relative;
+  top: 3rpx;
+}
+
+.delete-btn {
+  width: 44rpx;
+  height: 44rpx;
+  position: absolute;
+  right: 10rpx;
+  top: 16rpx;
+}
+
+.footer-content {
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  padding: 0 20rpx;
+  width: 710rpx;
+  border-top: 1rpx solid #ccc;
+}
+
+.top-content {
+  display: flex;
+  padding: 20rpx 0;
+  height: 40rpx;
+}
+
+.top-content .title,
+.top-content .price-content {
+  flex: 1;
+  line-height: 40rpx;
+}
+
+.top-content .price-content {
+  text-align: right;
+}
+
+.top-content .price-content .title {
+  font-size: 24rpx;
+  color: #000;
+  line-height: 40rpx;
+}
+
+.top-content .price-content .price {
+  font-size: 32rpx;
+  color: #B62A18;
+  display: inline-block;
+  line-height: 40rpx;
+}
+
+.top-content .price-content .rmb {
+  margin-left: 20rpx;
+  font-size: 24rpx;
+  display: inline-block;
+  color: #999;
+  line-height: 40rpx;
+}
+
+.options-content {
+  padding-bottom: 30rpx;
+  display: flex;
+}
+
+.options-content .confirm-btn,
+.options-content .pay-btn {
+  flex: 1;
+  text-align: center;
+  color: #fff;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 28rpx;
+  border-radius: 7rpx;
+}
+
+.options-content .confirm-btn {
+  background-color: rgb(209, 24, 25);
+  margin-right: 30rpx;
+}
+
+.options-content .pay-btn {
+  margin-left: 30rpx;
+  background-color: rgb(44, 177, 78);
+}
+
+.wechat-icon {
+  width: 36rpx;
+  position: relative;
+  top: 8rpx;
+  margin-right: 10rpx;
+}
+
+/*.page {
+  background-color: rgb(222, 222, 222);
+}
+
+.clearfix {
+  clear: both;
+}
+
+.banner {
+  width: 750rpx;
+  height:110rpx;
+}
+
+.takeplace-90 {
+  height: 90rpx;
+}
+
+.takeplace-160 {
+  height: 160rpx;
+}
+
+.topbar {
+  width: 710rpx;
+  background-color: #fff;
+  margin: 20rpx;
+  position: relative;
+}
+
+.topbar .left-part {
+  display: inline-block;
+  padding: 20rpx;
+  font-size: 30rpx;
+}
+
+.topbar .right-part {
+  float: right;
+  margin: 20rpx;
+  font-size: 30rpx;
+  position: relative;
+  border-left: 1rpx solid #000;
+  padding-left: 20rpx;
+}
+
+.list-item {
+  width: 710rpx;
+  margin: 20rpx;
+  background-color: #fff;
+  position: relative;
+}
+
+.list-item .top-content {
+  padding: 20rpx;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+
+.list-item .top-content .product-img {
+  width: 150rpx;
+  height: 150rpx;
+  float: left;
+  margin: 0 60rpx 0 40rpx;
+}
+
+.delete-btn {
+  width:50rpx;
+  height:50rpx;
+  position:absolute;
+  right:20rpx;
+  top:20rpx;
+}
+
+.top-content .brand,
+.top-content .name,
+.top-content .price {
+  display: block;
+  line-height: 48rpx;
+}
+
+.top-content .brand {
+  font-family: "TimesNewRomanPSMT";
+  font-size: 26rpx;
+  padding-right: 60rpx;
+}
+
+.top-content .name {
+  font-family: "FranklinITCStd-Light";
+  font-size: 26rpx;
+  padding-right: 60rpx;
+}
+
+.top-content .price {
+  color: #999;
+  font-size: 24rpx;
+  font-family: "FranklinITCStd-Medium";
+}
+
+.price-content {
+  background-color: #fff;
+  padding: 20rpx 30rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+
+.price-content .total-price {
+  color: #B62A18;
+  display: inline-block;
+  float: right;
+  font-family: "FranklinITCStd-Medium";
+  margin-right: 40rpx;
+}
+
+.price-content .total-rmb {
+  float: right;
+  font-size: 24rpx;
+  position:relative;
+  top:2rpx;
+  color: #000;
+}
+
+.order-confirm-bar {
+  background-color: rgb(222, 222, 222);
+  padding-bottom: 20rpx;
+  position: fixed;
+  bottom:115rpx;
+}
+
+.order-confirm-bar .top-content {
+  padding: 20rpx 30rpx;
+  width: 690rpx;
+}
+
+.order-confirm-bar .top-content .title {
+  display: inline-block;
+  color: #666;
+}
+
+.order-confirm-bar .top-content .total-fee {
+  float: right;
+  font-family: "FranklinITCStd-Medium";
+}
+
+.center-btn {
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: #B62A18;
+  color: #fff;
+  text-align: center;
+  width: 710rpx;
+  margin-left: 20rpx;
+}
+
+.btn-content {
+  display: flex;
+  height: 80rpx;
+}
+
+.btn-content .left-btn,
+.btn-content .right-btn {
+  flex: 1;
+  color: #fff;
+  text-align: center;
+  line-height: 80rpx;
+  margin: 0 20rpx;
+}
+
+.wechat-icon {
+  width: 40rpx;
+  position: relative;
+  top: 8rpx;
+  margin-right: 10rpx;
+}
+
+.btn-content .left-btn {
+  background-color: #B62A18;
+}
+
+.btn-content .right-btn {
+  background-color: rgb(30, 191, 22);
+}
+
+.total-fee-rmb {
+  font-size: 24rpx;
+  display: inline-block;
+  margin-left: 20rpx;
+}*/

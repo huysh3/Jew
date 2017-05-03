@@ -1,0 +1,23 @@
+.header {
+  text-align: center;
+  padding: 30rpx 0;
+  font-weight: bold;
+}
+
+.shop-item {
+  padding: 20rpx;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+
+.shop-name {
+  font-weight: bold;
+  font-size: 32rpx;
+  color: #333;
+}
+
+.shop-locate {
+  font-size: 24rpx;
+  color: #999;
+  margin-top: 20rpx;
+  margin-left: 5rpx;
+}

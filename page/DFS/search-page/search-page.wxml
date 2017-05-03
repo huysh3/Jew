@@ -1,0 +1,14 @@
+<view class="search-container">
+    <view class="section">
+        <input placeholder="输入搜索内容" bindinput="bindKeyInput" auto-focus/>
+        <view bindtap="handleSearchEvent" class="search-btn">搜索</view>
+    </view>
+    <view style="background-color: #fff;" class="footbar-takeplace"></view>
+    <view class="result-content">
+        <navigator url="../product/product?product_id={{item.id}}" class="result-item" wx:for="{{resultList}}">
+            <image class="item-image" src="{{item.enter_banner}}"></image>
+            <view class="item-name">{{item.name}}</view>
+            <view class="item-price">${{item.price}}</view>
+        </navigator>
+    </view>
+</view>

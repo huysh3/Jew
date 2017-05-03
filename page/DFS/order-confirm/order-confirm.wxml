@@ -1,0 +1,22 @@
+<view class="order-confirm-container">
+  <view class="header">
+    <image src="{{product.enter_banner}}?imageView/1/w/330/h/204" class="header-img"></image>
+    <view class="title">{{product.name}}</view>
+    <view class="subtitle">{{product.price}}元/{{product.show_entity_name}}</view>
+  </view>
+  <view class="order-info">
+    <view class="table-cell voucher-discount">
+      <span class="left-part">礼券优惠</span>
+      <span class="right-part">无</span>
+    </view>
+    <view class="table-cell">
+      <span class="left-part">订单合计</span>
+      <span class="right-part">{{product.price}}元</span>
+    </view>
+  </view>
+  <view class="phone-num table-cell">
+    <span class="left-part">手机号码</span>
+    <span class="right-part">{{phoneNumber}}</span>
+  </view>
+  <footer class="footer" bindtap="generateOrder">{{product.price}}元 去支付</footer>
+</view>

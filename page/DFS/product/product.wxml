@@ -1,0 +1,75 @@
+<view class="product-container">
+    <swiper class="header" 
+            indicator-dots="{{indicatorDots}}" 
+            autoplay="{{autoplay}}" 
+            interval="{{interval}}" 
+            loop="true" 
+            duration="{{duration}}">
+        <block wx:for="{{product.banner_image_urls}}">
+            <swiper-item>
+                <view class="swipe-content">
+                    <image mode="widthFix" src="{{item}}" bindtap="previewImgs" data-url="{{item}}" class="slide-image" />
+                </view>
+            </swiper-item>
+        </block>
+    </swiper>
+    <view class="product-info">
+      <view class="product-name">{{product.name}}</view>
+      <view class="product-intro">
+        {{product.brand_name}}
+      </view>
+      <view class="product-price-content">
+        <view class="price">${{product.price}}</view>
+        <view class="rmb">(￥{{product.RMB - product.RMB % 1}})</view>
+      </view>
+    </view>
+
+    <image mode="widthFix" class="coupon-image" src="https://ww4.sinaimg.cn/large/006tNc79gy1fekfklrjnmj30v90afgnw.jpg"></image>
+
+    <view class="product-desc">
+      <view class="title">产品信息</view>
+      <view class="desc">{{product.desc}}</view>
+    </view>
+
+    <image mode="widthFix" src="https://ww2.sinaimg.cn/large/006tNc79gy1fekfoudbgaj30sn04eq3o.jpg" class="security-image"></image>
+
+    <view class="counter">
+      <view class="left-part">
+        <view class="total-price">${{product.price * counter}}</view>
+        <view class="total-rmb">(￥{{(product.RMB - product.RMB % 1) * counter}})</view>
+      </view>
+      <view class="right-part">
+        <view bindtap="decr" class="decr">-</view>
+        <view class="number">{{counter}}</view>
+        <view bindtap="incr" class="incr">+</view>
+      </view>
+    </view>
+    <view style="background-color: #fff;" class="footbar-takeplace"></view>
+
+    <view class="footer">
+      <navigator url="../product-cart/product-cart" class="cart-icon"><image class="icon" src="https://ww2.sinaimg.cn/large/006tNc79gy1fekg1gmy7fj301t01ka9t.jpg"></image></navigator>
+      <view bindtap="buyBtnEvent" class="add-cart-btn">加入购物车</view>
+      <view bindtap="buyNow" class="buy-now-btn">立即购买</view>      
+    </view>
+</view>
+
+<view wx:if="{{modalStatus}}" class="mask"></view>
+<view name="done-model" wx:if="{{modalStatus}}">
+  <view class="modal-content">
+    <view class="modal-header">
+      <image class="icon" src="https://om536p71r.qnssl.com/shopping-cart.png"></image>
+    </view>
+    <view class="modal-body">
+      <view class="detail">{{modalProps.title}}</view>
+      <view class="detail">{{modalProps.text}}</view>
+    </view>
+    <view class="options-content">
+      <view bindtap="modalHide" class="left-btn">继续购物</view>
+      <navigator url="../product-cart/product-cart" class="right-btn">前往购物车</navigator>
+    </view>
+  </view>
+</view>
+<view style="background-color: #fff;" class="footbar-takeplace"></view>
+
+<import src="../../component/service-btn/service-btn.wxml" />
+<template is="service-btn" />

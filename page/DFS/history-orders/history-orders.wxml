@@ -1,0 +1,32 @@
+<view class="history-orders-container">
+  <image mode="widthFix" bindtap="routerGoHome" class="dfs-banner" src="{{shopInfo.header_banner}}"></image>
+  <navigator url="/page/DFS/history-order/history-order?order_id={{list.order_id}}" class="item-content" wx:for="{{indexList}}" wx:for-item="list">
+    <view class="item-header">
+      <view class="title">合并订单</view>
+      <view style="color: rgb(29, 180, 53)" wx:if="{{list.order_status_string == '待提货'}}" class="order-state">{{list.order_status_string}}</view>
+      <view wx:if="{{list.order_status_string != '待提货'}}" class="order-state">{{list.order_status_string}}</view>
+    </view>
+    <view class="scroll-content">
+      <scroll-view class="scroll-view_H" scroll-x="true">
+        <view class="scroll-view-item_H scroll-item" wx:for="{{list.order}}">
+          <image mode="widthFix" class="item-img" src="{{item.product.order_banner}}"></image>
+        </view>
+      </scroll-view>      
+    </view>
+    <view class="item-footer">
+      <view class="price-content">
+        <view class="title">订单合计</view>
+        <view class="item-total-price">${{list.total_price}}</view>
+        <view class="item-total-rmb">(￥{{list.total_price_RMB - list.total_price_RMB % 1}})</view>
+      </view>
+      <view class="amount-content">共 {{list.order.length}} 件</view>
+    </view>
+  </navigator>
+</view>
+
+<import src="../../component/service-btn/service-btn.wxml"/>
+<template is="service-btn"/>
+
+<view style="background-color: #f0f0f0;" class="footbar-takeplace"></view>
+<import src="../../component/footbar/footbar.wxml"/>
+<template is="footbar" data="{{footbarState}}"/>

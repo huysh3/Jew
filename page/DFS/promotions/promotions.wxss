@@ -1,0 +1,20 @@
+.promotions-container {
+  min-height: 100vh;
+  background-color: rgb(222, 222, 222);
+  padding: 20rpx;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.main-content {
+  /*background-color: #fff;*/
+}
+
+.promotions-banner {
+  width: 710rpx;
+  height: 500rpx;
+  float: left;
+  margin-bottom: 20rpx;
+}

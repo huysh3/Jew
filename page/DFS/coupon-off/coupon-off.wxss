@@ -1,0 +1,42 @@
+.coupon-off-container {
+  background-color: rgb(222, 222, 222);
+  min-height: 100vh;
+  padding: 20rpx;
+}
+
+.main-content {
+  background-color: #fff;
+}
+
+.banner {
+  width: 710rpx;
+  height: 1000rpx;
+}
+
+.text-img {
+  width: 710rpx;
+  height: 921rpx;
+}
+
+.cutline {
+  width: 600rpx;
+  margin: 40rpx 75rpx;
+  height: 1rpx;
+  background-color: #000;
+}
+
+.text-content {
+  padding: 60rpx;
+  color: #333;
+}
+
+.title {
+  font-size: 32rpx;
+  margin-bottom: 30rpx;
+  font-weight: bold;
+}
+
+.desc {
+  font-size: 28rpx;
+  line-height: 40rpx;
+}

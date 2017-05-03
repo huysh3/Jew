@@ -1,0 +1,24 @@
+var domain = 'https://72762681.qcloud.la/'
+
+Page({
+  data: {
+    cityList: []
+  },
+  onShow() {
+    this.getCityList()
+  },
+  getCityList() {
+    let _this = this
+    wx.request({
+      url: domain + 'Home/Shop/getCityList',
+      success(res) {
+        _this.setData({
+          cityList: res.data
+        })
+        console.log('------------------------------------');
+        console.log(res.data);
+        console.log('------------------------------------');
+      }
+    })
+  }
+})

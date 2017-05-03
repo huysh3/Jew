@@ -1,0 +1,21 @@
+<view class="coupon-on-container">
+  <view class="main-content">
+    <image mode="widthFix" class="banner" src="https://om536p71r.qnssl.com/404040Coupons2.png"></image>
+    <image class="qrcode" src="{{qrCodeSrc}}"></image>
+    <input wx:if="{{inputStatus}}" placeholder="" bindinput="judgeQrcode" auto-focus/>
+    <view class="cutline"></view>
+    <view class="text-content">
+      <text class="title">活动规则 Terms & Conditions：</text>
+      <text class="desc">
+·     电子礼券在完成下单后会发送至您的微信，可在夏威夷T广场免税店部分指定商品消费满$600后使用
+·     Spend $120 on DFS WeChat Mini-app and get a digital $60 coupon in your WeChat for your next selected purchase of $600 or more at T Galleria Hawaii.
+·     礼券不可在美妆护肤商品，烟酒商品，或土特产食品类商品消费上使用
+·     The gift voucher is not valid at Beauty, Liquor and Tobacco, Food and Destination purchase.
+·     礼券消费限每人每笔一张
+·     One gift voucher per transaction per person
+·     DFS集团有对此活动的最终解释权
+·     DFS Group reserves the right of final explanation of this promotion.
+      </text>
+    </view>
+  </view>
+</view>
