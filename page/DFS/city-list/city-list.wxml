@@ -1,4 +1,5 @@
 <view class="select-shop-container">
+  <image mode="widthFix" class="top-banner" src="http://ww1.sinaimg.cn/large/006tNc79gy1ff9tldbrt3j31540jwaf9.jpg"></image>
   <view class="modal-header">
     选择城市
   </view>

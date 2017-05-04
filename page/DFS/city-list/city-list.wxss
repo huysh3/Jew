@@ -1,6 +1,4 @@
 .select-shop-container {
-  width: 702rpx;
-  padding: 0 25rpx;
   height: 100vh;
   position: fixed;
   top: 0;
@@ -12,22 +10,36 @@
 .select-shop-container .city-item {
   width: 196rpx;
   height: 60rpx;
-  background-color: #f0f0f0;
+  background-color: #333;
   float: left;
   margin: 20rpx auto;
   margin-right: 50rpx;
   text-align: center;
   font-size: 24rpx;
-  color: #333;
+  color: #fff;
   line-height: 60rpx;
-  border: 1rpx solid #ccc;
+  border: 1rpx solid #333;
+}
+
+.top-banner {
+  width: 750rpx;
+  height: 181rpx;
+}
+
+.item-content {
+  width: 702rpx;
+  padding: 0 25rpx;
 }
 
 .select-shop-container .modal-header {
   border: none;
-  text-align: center;
-  height: 100rpx;
-  line-height: 100rpx;
+  /*text-align: center;*/
+  /*height: 100rpx;
+  line-height: 100rpx;*/
+  font-size:28rpx;
+  padding-top:40rpx;
+  font-weight: bold;
+  padding-left: 25rpx;
 }
 
 .select-shop-container .city-item:nth-child(3n) {
