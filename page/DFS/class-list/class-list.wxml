@@ -13,12 +13,13 @@
     <image mode="widthFix" class="nav-item" src="https://om536p71r.qnssl.com/SWS-Group%203.png"></image>
   </navigator>
   <navigator url="/page/DFS/product-list/product-list?class_name=Necklace">
-    <image mode="widthFix" class="nav-item" src="https://om536p71r.qnssl.com/SWS-Group%204.png" class="full"></image>
+    <image mode="widthFix" class="nav-item" src="https://om536p71r.qnssl.com/Neclacebanner_Group_4.png" class="full"></image>
   </navigator>
   <view style="background-color: #f0f0f0; float: left; width: 750rpx; height: 20rpx;"></view>
   
-  <navigator url="../artical/artical">
-    <image mode="widthFix" class="footer-banner" src="http://ww3.sinaimg.cn/large/006tKfTcgy1ff8w5lm95zj30v90c3h2g.jpg"></image>
+  <navigator style="background-color: #f0f0f0;" url="../artical/artical?artical_id={{item.artical_id}}" wx:for="{{articalList}}">
+    <image mode="widthFix" class="footer-banner" src="{{item.enter_banner}}"></image>
+    <view class="clearfix"></view>
   </navigator>
   <view class="clearfix"></view>
   <view style="background-color: #f0f0f0; float: left; width: 750rpx; height: 40rpx;"></view>

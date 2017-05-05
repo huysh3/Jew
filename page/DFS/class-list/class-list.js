@@ -6,6 +6,7 @@ Page({
   data: {
     "lists": '',
     "promotionStatus": false,
+    articalList: [],
     footbarState: {
       tabStatus: 'classList',
       cartBadgeNum: app.cartBadgeNum
@@ -23,6 +24,11 @@ Page({
     wx.setStorageSync('tabStatus', 'classList')
     this.setData({ "footbarState.cartBadgeNum": wx.getStorageSync('cartBadgeNum') })
     app.getCartBadge()
+    this.getClassList()
+    this.getArticalList()
+  },
+  getClassList() {
+    let _this = this
     wx.request({
       // url: domain + 'Home/weapp/class_list',
       url: domain + 'Test/weapp/class_list',
@@ -36,8 +42,20 @@ Page({
             promotionStatus: true
           })
         }, 300)
-      },
-      fail(error) {
+      }
+    })
+  },
+  getArticalList() {
+    let _this = this
+    wx.request({
+      url: domain + 'Test/Weapp/getArticalList',
+      success(res) {
+        console.log('------------------------------------');
+        _this.setData({
+          articalList: res.data
+        })
+        console.log(res);
+        console.log('------------------------------------');
       }
     })
   },

@@ -4,18 +4,21 @@ Page({
   data: {
     imageList: []
   },
-  onLoad() {
-    this.getArticalContent()
+  onLoad(options) {
+    this.getArticalContent(options)
   },
-  getArticalContent() {
+  getArticalContent(options) {
     let _this = this
     wx.request({
-      url: domain + '/Test/Weapp/test',
+      url: domain + '/Test/Weapp/getArticalById',
+      data: {
+        artical_id: options.artical_id
+      },
       success(res) {
         console.log('------------------------------------');
         console.log(res.data);
         _this.setData({
-          imageList: res.data
+          imageList: res.data.images
         })
         console.log('------------------------------------');
       }

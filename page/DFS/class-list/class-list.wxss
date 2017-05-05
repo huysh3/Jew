@@ -29,4 +29,5 @@ page {
 .footer-banner {
   float: left;
   width: 750rpx;
+  margin-bottom: 20rpx;
 }
