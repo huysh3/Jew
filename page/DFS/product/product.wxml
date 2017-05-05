@@ -24,7 +24,7 @@
       </view>
     </view>
 
-    <image mode="widthFix" class="coupon-image" src="https://ww4.sinaimg.cn/large/006tNc79gy1fekfklrjnmj30v90afgnw.jpg"></image>
+    <!--<image mode="widthFix" class="coupon-image" src="https://ww4.sinaimg.cn/large/006tNc79gy1fekfklrjnmj30v90afgnw.jpg"></image>-->
 
     <view class="product-desc">
       <view class="title">产品信息</view>
