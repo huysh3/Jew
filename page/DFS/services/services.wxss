@@ -49,11 +49,9 @@
 }
 
 .right-part {
-  /*position: absolute;*/
   width: 130rpx;
   bottom: 142rpx;
   margin-top: 50rpx;
-  /*right: 100rpx;*/
 }
 
 .contact-btn {

@@ -1,0 +1,4 @@
+<view class="artical-container">
+  <image mode="widthFix" wx:for="{{imageList}}" class="artical-item" src="{{item}}"></image>
+  <view class="clearfix"></view>
+</view>

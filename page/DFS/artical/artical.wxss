@@ -1,0 +1,10 @@
+.artical-container {
+  /*padding: 20rpx;*/
+  text-align: center;
+}
+
+.artical-item {
+  width: 750rpx;
+  height: 400rpx;
+  float: left;
+}
