@@ -1,10 +1,10 @@
 {
     "pages": [
-        "page/DFS/home/home",
         "page/DFS/city-list/city-list",
+        "page/DFS/services/services",
+        "page/DFS/home/home",
         "page/DFS/shop-list/shop-list",
         "page/DFS/search-page/search-page",
-        "page/DFS/services/services",
         "page/DFS/product-cart/product-cart",
         "page/DFS/history-orders/history-orders",
         "page/DFS/product/product",
@@ -21,7 +21,7 @@
     ],
     "window": {
         "navigationBarTextStyle": "black",
-        "navigationBarTitleText": "SWAROVSKI",
+        "navigationBarTitleText": "施华洛世奇",
         "navigationBarBackgroundColor": "#fff",
         "backgroundColor": "#333",
         "enablePullDownRefresh": false

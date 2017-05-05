@@ -4,7 +4,13 @@ page {
 
 .nav-item {
   float: left;
-  width: 375rpx;
+  width: 374rpx;
+  border-top: 1rpx solid #f0f0f0;
+}
+
+.nav-item:first-child {
+  width: 373rpx;
+  border-right: 1rpx solid #f0f0f0;
 }
 
 .top-banner {
@@ -17,6 +23,7 @@ page {
 
 .full {
   width: 750rpx;
+  border-top: 1rpx solid #f0f0f0;
 }
 
 .footer-banner {

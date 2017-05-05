@@ -1,24 +1,24 @@
 <template name="footbar">
   <view class="footbar-content">
     <navigator open-type="redirectTo" url="/page/DFS/home/home" class="footbar-item">
-      <image wx:if="{{footbarState.tabStatus != 'aboutDFS'}}" class="footbar-img" src="../../../image/home-2.png"></image>
-      <image wx:if="{{footbarState.tabStatus == 'aboutDFS'}}" class="footbar-img" src="../../../image/home.png"></image>
+      <image mode="widthFix" wx:if="{{footbarState.tabStatus != 'aboutDFS'}}" class="footbar-img" src="../../../image/home-2.png"></image>
+      <image mode="widthFix" wx:if="{{footbarState.tabStatus == 'aboutDFS'}}" class="footbar-img" src="../../../image/home.png"></image>
       <view class="title {{footbarState.tabStatus == 'aboutDFS' ? 'active' : ''}}">主页</view>
     </navigator>
     <navigator open-type="redirectTo" url="/page/DFS/class-list/class-list" class="footbar-item">
-      <image wx:if="{{footbarState.tabStatus != 'classList'}}" class="footbar-img" src="../../../image/class-2.png"></image>
-      <image wx:if="{{footbarState.tabStatus == 'classList'}}" class="footbar-img" src="../../../image/class.png"></image>
+      <image mode="widthFix" wx:if="{{footbarState.tabStatus != 'classList'}}" class="footbar-img" src="../../../image/class-2.png"></image>
+      <image mode="widthFix" wx:if="{{footbarState.tabStatus == 'classList'}}" class="footbar-img" src="../../../image/class.png"></image>
       <view class="title {{footbarState.tabStatus == 'classList' ? 'active' : ''}}">目录</view>
     </navigator>
     <navigator open-type="redirectTo" url="/page/DFS/order-center/order-center" class="footbar-item">
-      <image wx:if="{{footbarState.tabStatus != 'orderCenter'}}" class="footbar-img" src="../../../image/cart-2.png"></image>
-      <image wx:if="{{footbarState.tabStatus == 'orderCenter'}}" class="footbar-img" src="../../../image/cart.png"></image>
+      <image mode="widthFix" wx:if="{{footbarState.tabStatus != 'orderCenter'}}" class="footbar-img" src="../../../image/cart-2.png"></image>
+      <image mode="widthFix" wx:if="{{footbarState.tabStatus == 'orderCenter'}}" class="footbar-img" src="../../../image/cart.png"></image>
       <view class="title {{footbarState.tabStatus == 'orderCenter' ? 'active' : ''}}">购物车</view>
       <view wx:if="{{footbarState.cartBadgeNum > 0}}" class="badge">{{footbarState.cartBadgeNum}}</view>
     </navigator>
     <navigator open-type="redirectTo" url="/page/DFS/history-orders/history-orders" class="footbar-item">
-      <image wx:if="{{footbarState.tabStatus != 'historyOrders'}}" class="footbar-img" src="../../../image/my-2.png"></image>
-      <image wx:if="{{footbarState.tabStatus == 'historyOrders'}}" class="footbar-img" src="../../../image/my.png"></image>
+      <image mode="widthFix" wx:if="{{footbarState.tabStatus != 'historyOrders'}}" class="footbar-img" src="../../../image/my-2.png"></image>
+      <image mode="widthFix" wx:if="{{footbarState.tabStatus == 'historyOrders'}}" class="footbar-img" src="../../../image/my.png"></image>
       <view class="title {{footbarState.tabStatus == 'historyOrders' ? 'active' : ''}}">我的</view>
     </navigator>
   </view>

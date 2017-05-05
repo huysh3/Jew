@@ -26,5 +26,10 @@ Page({
         // console.log('------------------------------------');
       }
     })
+  },
+  phoneCall(event) {
+    wx.makePhoneCall({
+      phoneNumber: event.currentTarget.dataset.phone //仅为示例，并非真实的电话号码
+    })    
   }
 })

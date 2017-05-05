@@ -18,7 +18,7 @@
 }
 
 .desc {
-  margin-top: 140rpx;
+  margin-top: 100rpx;
 }
 
 .text-content {
@@ -49,10 +49,11 @@
 }
 
 .right-part {
-  position: absolute;
+  /*position: absolute;*/
   width: 130rpx;
   bottom: 142rpx;
-  right: 100rpx;
+  margin-top: 50rpx;
+  /*right: 100rpx;*/
 }
 
 .contact-btn {

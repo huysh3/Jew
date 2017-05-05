@@ -5,7 +5,7 @@
       <view class="tips-title">北京时间</view>
       <view class="tips-text">周一至周五 9:00~18:00</view>
     </view>
-    <image mode="widthFix" class="left-part" src="../../../image/services_left.png"></image>
+    <!--<image mode="widthFix" class="left-part" src="../../../image/services_left.png"></image>-->
     <image mode="widthFix" bindtap="phoneCall" class="right-part" src="../../../image/services_right.png"></image>
   </view>
   <!--<view class="main-content">

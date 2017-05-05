@@ -5,6 +5,7 @@
 
 .banner {
   width: 750rpx;
+  float:left;
 }
 
 /* .main-content {
@@ -104,7 +105,6 @@
 } */
 .list-item {
   width: 750rpx;
-  box-shadow: 0 0 5rpx rgba(0, 0, 0, 0.2);
   margin-bottom: 40rpx;
 }
 
@@ -128,10 +128,9 @@
 }
 
 .product-name {
-  font-size: 24rpx;
-  color: #999;
-  line-height: 40rpx;
-  padding: 20rpx 0;
+  font-size: 40rpx;
+  font-weight: bold;
+  padding-bottom: 20rpx;
 }
 
 .product-rmb {
