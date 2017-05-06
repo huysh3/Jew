@@ -174,7 +174,7 @@ var pageObject = {
                   })
                   wx.hideToast();
                   _this.setData({
-                      "modalProps.text": '预定商品库存有限，请到夏威夷T广场免税店4层提货处完成付款步骤确保顺利提货，售完即止，如有任何问题请与客服联系。',
+                      "modalProps.text": '谢谢惠顾！如有任何问题请与客服联系。',
                       doneModalStatus: true
                   })
               }
@@ -211,7 +211,7 @@ var pageObject = {
                               "footbarState.cartBadgeNum": 0
                           })
                           _this.setData({
-                              "modalProps.text": '订单已经生成，请到夏威夷T广场免税店4层提货处提货，如有任何问题请与客服联系。谢谢惠顾！',
+                              "modalProps.text": '谢谢惠顾！如有任何问题请与客服联系。',
                               doneModalStatus: true
                           })
                       },
