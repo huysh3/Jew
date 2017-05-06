@@ -7,13 +7,13 @@
     <image mode="widthFix" class="nav-item" src="{{item.class_url}}"></image>
   </navigator>-->
   <navigator url="/page/DFS/product-list/product-list?class_name=Earring">
-    <image mode="widthFix" class="nav-item" src="https://om536p71r.qnssl.com/SWS-Group%202.png"></image>
+    <image mode="widthFix" class="nav-item" src="{{lists[0].class_url}}"></image>
   </navigator>
   <navigator url="/page/DFS/product-list/product-list?class_name=Bracelet">
-    <image mode="widthFix" class="nav-item" src="https://om536p71r.qnssl.com/SWS-Group%203.png"></image>
+    <image mode="widthFix" class="nav-item" src="{{lists[1].class_url}}"></image>
   </navigator>
   <navigator url="/page/DFS/product-list/product-list?class_name=Necklace">
-    <image mode="widthFix" class="nav-item" src="https://om536p71r.qnssl.com/Neclacebanner_Group_4.png" class="full"></image>
+    <image mode="widthFix" class="nav-item" src="{{lists[2].class_url}}" class="full"></image>
   </navigator>
   <view style="background-color: #f0f0f0; float: left; width: 750rpx; height: 20rpx;"></view>
   
