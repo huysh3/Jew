@@ -24,9 +24,6 @@
   </navigator>
 </view>
 
-<import src="../../component/service-btn/service-btn.wxml"/>
-<template is="service-btn"/>
-
 <view style="background-color: #f0f0f0;" class="footbar-takeplace"></view>
 <import src="../../component/footbar/footbar.wxml"/>
 <template is="footbar" data="{{footbarState}}"/>

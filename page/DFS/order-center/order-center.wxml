@@ -58,8 +58,7 @@
   </view>
 </view>
 
-<import src="../../component/service-btn/service-btn.wxml"/>
-<template is="service-btn"/>
+
 
 <view class="footbar-takeplace" style="background-color: #f0f0f0;"></view>
 <import src="../../component/footbar/footbar.wxml"/>

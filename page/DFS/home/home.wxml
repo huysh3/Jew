@@ -18,10 +18,10 @@
   </swiper>
   <view class="middle-content">
     <navigator url="../search-page/search-page" class="left-part"><image class="icon" src="../../../image/search.png"></image>搜索</navigator>
-    <navigator url="../city-list/city-list" class="right-part"><image class="icon" src="../../../image/location.png"></image>商店列表</navigator>
+    <navigator url="../city-list/city-list" class="right-part"><image class="icon" src="../../../image/location.png"></image>门店列表</navigator>
   </view>
   <view class="selected-content">
-    <view class="title">为您甄选</view>
+    <view class="title">本季主打</view>
     <scroll-view class="scroll-view_H" scroll-x="true">
       <navigator url="../product/product?product_id={{item.product_id}}" class="scroll-view-item_H scroll-item" wx:for="{{selected_list}}">
         <image mode="widthFix" class="item-img" src="{{item.enter_banner}}"></image>
