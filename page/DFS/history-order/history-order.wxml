@@ -12,7 +12,7 @@
         <view class="brand-name">{{item.product.brand_name}}</view>
         <view class="product-name">{{item.product.name}}</view>
         <view class="number">* {{item.number}}</view>
-        <view class="price">￥{{item.price}}</view>
+        <view class="price">CNY{{item.price}}</view>
       </view>
     </view>
   </view>

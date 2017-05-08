@@ -16,8 +16,8 @@
     <view class="item-footer">
       <view class="price-content">
         <view class="title">订单合计</view>
-        <view class="item-total-price">￥{{list.total_price}}</view>
-        <!--<view class="item-total-rmb">(￥{{list.total_price_RMB - list.total_price_RMB % 1}})</view>-->
+        <view class="item-total-price">CNY{{list.total_price}}</view>
+        <!--<view class="item-total-rmb">(CNY{{list.total_price_RMB - list.total_price_RMB % 1}})</view>-->
       </view>
       <view class="amount-content">共 {{list.order.length}} 件</view>
     </view>

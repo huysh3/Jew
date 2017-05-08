@@ -26,7 +26,7 @@
       <navigator url="../product/product?product_id={{item.product_id}}" class="scroll-view-item_H scroll-item" wx:for="{{selected_list}}">
         <image mode="widthFix" class="item-img" src="{{item.enter_banner}}"></image>
         <view class="item-title">{{item.product_name}}</view>
-        <view class="item-price">￥{{item.price}}</view>
+        <view class="item-price">CNY{{item.price}}</view>
       </navigator>
     </scroll-view>
   </view>
@@ -41,7 +41,7 @@
       <navigator url="../product/product?product_id={{item.product_id}}" class="scroll-view-item_H scroll-item" wx:for="{{idx.goods}}">
         <image mode="widthFix" class="item-img" src="{{item.enter_banner}}"></image>
         <view class="item-title">{{item.product_name}}</view>
-        <view class="item-price">￥{{item.price}}</view>
+        <view class="item-price">CNY{{item.price}}</view>
       </navigator>
     </scroll-view>
     <view class="cutline"></view>

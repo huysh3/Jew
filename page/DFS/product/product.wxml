@@ -19,8 +19,8 @@
         {{product.brand_name}}
       </view>
       <view class="product-price-content">
-        <view class="price">￥{{product.price}}</view>
-        <!--<view class="rmb">(￥{{product.RMB - product.RMB % 1}})</view>-->
+        <view class="price">CNY{{product.price}}</view>
+        <!--<view class="rmb">(CNY{{product.RMB - product.RMB % 1}})</view>-->
       </view>
     </view>
 
@@ -35,8 +35,8 @@
 
     <view class="counter">
       <view class="left-part">
-        <view class="total-price">￥{{product.price * counter}}</view>
-        <!--<view class="total-rmb">(￥{{(product.RMB - product.RMB % 1) * counter}})</view>-->
+        <view class="total-price">CNY{{product.price * counter}}</view>
+        <!--<view class="total-rmb">(CNY{{(product.RMB - product.RMB % 1) * counter}})</view>-->
       </view>
       <view class="right-part">
         <view bindtap="decr" class="decr">-</view>
