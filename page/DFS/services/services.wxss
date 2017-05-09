@@ -1,7 +1,7 @@
 .services-container {
   width: 750rpx;
   height: 100vh;
-  background: url('http://ww3.sinaimg.cn/large/006tNbRwgy1ffedexjntxj30v91c8e81.jpg') no-repeat;
+  background: url('http://ww2.sinaimg.cn/large/006tNbRwgy1ffedmhrd96j30vh1cgu0x.jpg') no-repeat;
   background-size: 100% 100%;
 }
 
