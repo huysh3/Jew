@@ -2,7 +2,8 @@ var domain = 'https://72762681.qcloud.la/'
 
 Page({
   data: {
-    cityList: []
+    cityList: [],
+    hotList: ['上海','北京','广州','深圳','南京','成都']
   },
   onShow() {
     this.getCityList()
