@@ -60,7 +60,7 @@
       </view>
       <view class="modal-body checkbox-group">
         <checkbox-group bindchange="checkboxChange">
-          <checkbox value="receipt" checked=""/>是否需要发票
+          <checkbox value="receipt" checked=""/>是否需要收据
         </checkbox-group>
       </view>
 

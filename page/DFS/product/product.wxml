@@ -28,7 +28,7 @@
       <view class="desc">{{product.desc}}</view>
     </view>
 
-    <image mode="widthFix" src="https://ww2.sinaimg.cn/large/006tNc79gy1fekfoudbgaj30sn04eq3o.jpg" class="security-image"></image>
+    <image mode="widthFix" src="http://ww2.sinaimg.cn/large/006tNc79gy1fffnt79kldj31kw08udhs.jpg" class="security-image"></image>
 
     <view class="counter">
       <view class="left-part">
@@ -71,7 +71,7 @@
         </view>
         <view class="modal-body checkbox-group">
           <checkbox-group bindchange="checkboxChange">
-            <checkbox value="receipt" checked=""/>是否需要发票
+            <checkbox value="receipt" checked=""/>是否需要收据
           </checkbox-group>
         </view>
 
