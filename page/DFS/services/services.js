@@ -4,7 +4,7 @@ Page({
   },
   phoneCall: function() {
     wx.makePhoneCall({
-      phoneNumber: '13602455397' //仅为示例，并非真实的电话号码
+      phoneNumber: '4006901078' //仅为示例，并非真实的电话号码
     })
   },
   routerGoHome: function() {
