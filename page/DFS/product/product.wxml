@@ -20,11 +20,8 @@
       </view>
       <view class="product-price-content">
         <view class="price">CNY{{product.price}}</view>
-        <!--<view class="rmb">(CNY{{product.RMB - product.RMB % 1}})</view>-->
       </view>
     </view>
-
-    <!--<image mode="widthFix" class="coupon-image" src="https://ww4.sinaimg.cn/large/006tNc79gy1fekfklrjnmj30v90afgnw.jpg"></image>-->
 
     <view class="product-desc">
       <view class="title">产品信息</view>
@@ -36,7 +33,6 @@
     <view class="counter">
       <view class="left-part">
         <view class="total-price">CNY{{product.price * counter}}</view>
-        <!--<view class="total-rmb">(CNY{{(product.RMB - product.RMB % 1) * counter}})</view>-->
       </view>
       <view class="right-part">
         <view bindtap="decr" class="decr">-</view>
@@ -49,7 +45,45 @@
     <view class="footer">
       <navigator url="../product-cart/product-cart" class="cart-icon"><image class="icon" src="https://ww2.sinaimg.cn/large/006tNc79gy1fekg1gmy7fj301t01ka9t.jpg"></image></navigator>
       <view bindtap="buyBtnEvent" class="add-cart-btn">加入购物车</view>
-      <view bindtap="buyNow" class="buy-now-btn">立即购买</view>      
+      <view bindtap="buyNowEvent" class="buy-now-btn">立即购买</view>      
+    </view>
+
+    <view name="input-model" wx:if="{{inputModalState}}">
+      <view class="mask"></view>
+      <view class="input-modal-content">
+        <view class="input-modal-header">
+          姓名：
+        </view>
+        <view class="modal-body">
+          <input bindinput="bindNameInput" type="text" class="phone-input"></input>
+        </view>
+        <view class="input-modal-header">
+          联系电话：
+        </view>
+        <view class="modal-body">
+          <input bindinput="bindPhoneInput" type="text" class="phone-input"></input>
+        </view>
+        <view class="input-modal-header">
+          收货地址：
+        </view>
+        <view class="modal-body">
+          <input bindinput="bindAddrInput" type="text" class="phone-input"></input>
+        </view>
+        <view class="modal-body checkbox-group">
+          <checkbox-group bindchange="checkboxChange">
+            <checkbox value="receipt" checked=""/>是否需要发票
+          </checkbox-group>
+        </view>
+
+        <view class="modal-footer">
+          <view class="input-cancel-btn" bindtap="inputModalCancel">
+            取消
+          </view>
+          <view class="input-confirm-btn" bindtap="buyNow">
+            确认
+          </view>
+        </view>
+      </view>
     </view>
 </view>
 
@@ -69,6 +103,7 @@
     </view>
   </view>
 </view>
+
 <view style="background-color: #fff;" class="footbar-takeplace"></view>
 
 <import src="../../component/service-btn/service-btn.wxml" />

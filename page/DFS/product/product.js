@@ -38,7 +38,7 @@ var pageObject = {
     duration: 400,
     inputPhoneNumber: '',
     hasSend: false,
-    shop_id: '',
+    // shop_id: '',
     product_id: '',
     price: '',
     total_price: '',
@@ -52,6 +52,11 @@ var pageObject = {
       title: '操作成功',
       text: ''
     },
+    inputPhoneNumber: '',
+    inputName: '',
+    inputAddr: '',
+    receipt: '0',
+    inputModalState: false,
     modalStatus: false
   },
   // onShareAppMessage: function () {
@@ -80,10 +85,8 @@ var pageObject = {
       method: 'get',
       data: {
         product_id: _this.data.product_id,
-        shop_id: _this.data.shop_id,
         price: _this.data.price,
         number: _this.data.counter,
-        shop_id: wx.getStorageSync('shop_id'),        
         uid: wx.getStorageSync('uid')
       },
       success(res) {
@@ -150,12 +153,12 @@ var pageObject = {
         url: domain + 'Test/weapp/product_info',
         data: {
           product_id : options.product_id,
-          shop_id: wx.getStorageSync('shop_id')        
+          // // shop_id: wx.getStorageSync('shop_id')        
         },
         method: 'get',
         success: (response) => {
           _this.setData({
-            shop_id: response.data.shop.id,
+            // shop_id: response.data.shop.id,
             product_id: response.data.id,
             price: response.data.price
           })
@@ -179,19 +182,57 @@ var pageObject = {
       phoneNumber: _this.data.product.shop.contact_phone //仅为示例，并非真实的电话号码
     })
   },
+  bindNameInput: function(e) {
+    this.setData({
+      inputName: e.detail.value
+    })
+  },
+  bindPhoneInput: function(e) {
+    this.setData({
+      inputPhoneNumber: e.detail.value
+    })
+  },
+  bindAddrInput: function(e) {
+    this.setData({
+      inputAddr: e.detail.value
+    })
+  },  
+  inputModalCancel: function() {
+    this.setData({
+      inputModalState: false,
+      inputAddr: '',
+      inputName: '',
+      inputPhoneNumber: '',
+      receipt: '0'
+    })
+  },  
+  buyNowEvent: function() {
+    this.setData({
+      inputModalState: true,
+      inputAddr: '',
+      inputName: '',
+      inputPhoneNumber: '',
+      receipt: '0'      
+    })
+  },
   buyNow: function() {
     var _this = this
     wx.request({
       url: domain + 'Test/order/buyNow',
       data: {
         product_id: _this.data.product_id,
-        shop_id: _this.data.shop_id,
         price: _this.data.price,
         number: _this.data.counter,
-        uid: wx.getStorageSync('uid')
+        uid: wx.getStorageSync('uid'),
+        consignee: _this.data.inputName,
+        phone: _this.data.inputPhoneNumber,
+        address: _this.data.inputAddr,
+        receipt: _this.data.receipt
+        // 'phone', 'consignee', 'address', 'receipt'
       },
       success(res) {
         showBusy('正在通信..');
+        _this.inputModalCancel()
         _this.callPay(res.data)
       }
     })
@@ -203,7 +244,6 @@ var pageObject = {
         // url: domain + 'Pay/Wechatpay/callPay',
         data: {
             order_id: order_id,
-            shop_id: wx.getStorageSync('shop_id'),
             uid: wx.getStorageSync('uid')
         },
         success(res) {

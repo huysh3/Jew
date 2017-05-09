@@ -118,7 +118,7 @@
   display: flex;
 }
 
-.options-content .confirm-btn,
+/*.options-content .confirm-btn,*/
 .options-content .pay-btn {
   flex: 1;
   text-align: center;
@@ -135,7 +135,7 @@
 }
 
 .options-content .pay-btn {
-  margin-left: 30rpx;
+  /*margin-left: 30rpx;*/
   background-color: rgb(44, 177, 78);
 }
 

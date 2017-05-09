@@ -11,7 +11,9 @@
       <block wx:for="{{banner}}">
           <swiper-item>
               <view class="swipe-content">
+                <navigator url="../video/video">
                   <image class="home-banner" mode="widthFix" src="{{item.img_url}}"></image>
+                </navigator>
               </view>
           </swiper-item>
       </block>

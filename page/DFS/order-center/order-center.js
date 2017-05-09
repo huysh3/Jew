@@ -39,9 +39,12 @@ var pageObject = {
     total_price: '0',
     total_price_rmb: '0',
     inputPhoneNumber: '',
+    inputName: '',
+    inputAddr: '',
     doneModalStatus: false,
     inputModalState: false,
     needPay: false,
+    receipt: '0',
     modalProps: {
       text: ''
     },
@@ -106,26 +109,53 @@ var pageObject = {
     })
   },
   // 需要支付
-  // 无需手机号弹窗
+  // 需要弹窗
   handleConfirmBtn: function() {
       var _this = this
       if (this.data.orderList.length == 0) {
           showModel('尚无商品', '请先去商品目录挑选商品');
           return false;
       }
-      showBusy('正在通信..');
-      wx.request({
-          url: domain + 'Home/order/combineOrder',
-          data: {
-              uid: wx.getStorageSync('uid'),
-              shop_id: wx.getStorageSync('shop_id')        
-          },
-          success(res) {
-              if (res.data) {
-                  _this.callPay(res.data)
-              }
-          }
+      _this.setData({
+        inputModalState: true
       })
+  },
+  checkboxChange: function(e) {
+    if (e.detail.value[0] == 'receipt') {
+      this.setData({
+        receipt: '1'
+      })
+    } else {
+      this.setData({
+        receipt: '0'
+      })      
+    }
+  },
+  combineOrder: function() {
+    var _this = this
+    showBusy('正在通信..');
+    wx.request({
+      url: domain + 'Home/order/combineOrder',
+      data: {
+          uid: wx.getStorageSync('uid'),
+          consignee: _this.data.inputName,
+          phone: _this.data.inputPhoneNumber,
+          address: _this.data.inputAddr,
+          receipt: _this.data.receipt
+      },
+      success(res) {
+          if (res.data) {
+            _this.setData({
+              inputModalState: false,
+              inputAddr: '',
+              inputName: '',
+              inputPhoneNumber: '',
+              receipt: '0'
+            })            
+            _this.callPay(res.data)
+          }
+      }
+    })    
   },
   // 无需支付
   // 预购订单用confirm，手机号弹窗
@@ -141,18 +171,29 @@ var pageObject = {
   },
   inputModalCancel: function() {
     this.setData({
-      inputModalState: false
+      inputModalState: false,
+      inputAddr: '',
+      inputName: '',
+      inputPhoneNumber: '',
+      receipt: '0'
     })
   },
-  bindKeyInput: function(e) {
+  bindNameInput: function(e) {
+    this.setData({
+      inputName: e.detail.value
+    })
+  },
+  bindPhoneInput: function(e) {
     this.setData({
       inputPhoneNumber: e.detail.value
     })
   },
+  bindAddrInput: function(e) {
+    this.setData({
+      inputAddr: e.detail.value
+    })
+  },
   confirmOrder: function() {
-      this.setData({
-          inputModalState: false
-      })
       showBusy('正在通信..');
       var _this = this
       wx.request({
@@ -182,7 +223,7 @@ var pageObject = {
       })
   },
   callPay(order_id) {
-      var _this = this
+      var _this = this      
       wx.request({
           url: domain + 'Test/Wechatpay/callPay',
           // url: domain + 'Pay/Wechatpay/callPay',
@@ -192,6 +233,9 @@ var pageObject = {
               shop_id: wx.getStorageSync('shop_id')
           },
           success(res) {
+              _this.setData({
+                inputModalState: false
+              })            
               wx.hideToast();
               console.log(res.data.data.timeStamp)
               if (res.data.result == 'success') {
@@ -277,7 +321,7 @@ var pageObject = {
       url: domain + 'Home/order/deleteOrder',
       data: {
         id : targetId,
-        shop_id: wx.getStorageSync('shop_id')        
+        shop_id: wx.getStorageSync('shop_id')
       },
       success(res) {
         if (res.data == 'success') {

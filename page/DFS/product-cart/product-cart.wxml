@@ -29,7 +29,7 @@
       </view>
     </view>
     <view class="options-content">
-      <view class="confirm-btn" bindtap="handleCombineBtn">预留订单</view>
+      <!--<view class="confirm-btn" bindtap="handleCombineBtn">预留订单</view>-->
       <view class="pay-btn" bindtap="handleConfirmBtn"><image mode="widthFix" class="wechat-icon" src="../../../image/wechat.png"></image>微信支付</view>
     </view>
   </view>
@@ -41,16 +41,34 @@
     <view class="mask"></view>
     <view class="input-modal-content">
       <view class="input-modal-header">
-        输入联系电话以生成订单
+        姓名：
       </view>
       <view class="modal-body">
-        <input bindinput="bindKeyInput" type="text" class="phone-input"></input>
+        <input bindinput="bindNameInput" type="text" class="phone-input"></input>
       </view>
+      <view class="input-modal-header">
+        联系电话：
+      </view>
+      <view class="modal-body">
+        <input bindinput="bindPhoneInput" type="text" class="phone-input"></input>
+      </view>
+      <view class="input-modal-header">
+        收货地址：
+      </view>
+      <view class="modal-body">
+        <input bindinput="bindAddrInput" type="text" class="phone-input"></input>
+      </view>
+      <view class="modal-body checkbox-group">
+        <checkbox-group bindchange="checkboxChange">
+          <checkbox value="receipt" checked=""/>是否需要发票
+        </checkbox-group>
+      </view>
+
       <view class="modal-footer">
         <view class="input-cancel-btn" bindtap="inputModalCancel">
           取消
         </view>
-        <view class="input-confirm-btn" bindtap="confirmOrder">
+        <view class="input-confirm-btn" bindtap="combineOrder">
           确认
         </view>
       </view>

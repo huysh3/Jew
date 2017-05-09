@@ -6,12 +6,15 @@
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
+  /*text-align: center;*/
   border: 2rpx solid #999;
 }
 
 .input-modal-header {
-  line-height: 70rpx;
+  margin-left: 20rpx;
+  padding-bottom: 10rpx;
+  padding-top: 20rpx;
+  /*line-height: 70rpx;*/
 }
 
 .modal-content .icon {
@@ -20,8 +23,8 @@
   padding: 40rpx 0;
 }
 
-.modal-body {
-  padding-top: 30rpx;
+.input-modal-content .modal-body {
+  padding-top: 0 !important;
   font-size: 26rpx;
   line-height: 50rpx;
   color: #666;
@@ -52,6 +55,11 @@
   text-align: center;
   flex: 1;
   margin: 0 20rpx;
+}
+
+.checkbox-group {
+  margin-top: 20rpx;
+  margin-left: 20rpx;
 }
 
 .phone-input {
