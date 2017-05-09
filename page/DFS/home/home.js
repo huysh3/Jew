@@ -147,7 +147,7 @@ Page({
   },
   onShareAppMessage: function () {
     return {
-      title: 'DFS购物微信小程序',
+      title: '施华洛世奇璀璨馈赠',
       path: '/page/DFS/home/home',
       success: function(res) {
         // 分享成功
