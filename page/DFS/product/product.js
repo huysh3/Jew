@@ -275,7 +275,7 @@ var pageObject = {
                         // 支付成功
                         _this.setData({
                             "modalProps.title": '支付成功',
-                            "modalProps.text": '订单已经生成，请到夏威夷T广场免税店4层提货处提货，如有任何问题请与客服联系。谢谢惠顾！',
+                            "modalProps.text": '订单已经生成，如有任何问题请与客服联系。谢谢惠顾！',
                             modalStatus: true
                         })
                     },
