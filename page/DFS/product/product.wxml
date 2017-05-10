@@ -28,7 +28,7 @@
       <view class="desc">{{product.desc}}</view>
     </view>
 
-    <image mode="widthFix" src="http://ww3.sinaimg.cn/large/006tNc79gy1fffo18x3tkj31kw08q769.jpg" class="security-image"></image>
+    <image mode="widthFix" src="https://om536p71r.qnssl.com/sws-trustment-%E5%BA%95%E9%83%A8icon@1.5x.png" class="security-image"></image>
 
     <view class="counter">
       <view class="left-part">

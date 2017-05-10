@@ -19,7 +19,7 @@
     <navigator open-type="redirectTo" url="/page/DFS/history-orders/history-orders" class="footbar-item">
       <image mode="widthFix" wx:if="{{footbarState.tabStatus != 'historyOrders'}}" class="footbar-img" src="../../../image/my-2.png"></image>
       <image mode="widthFix" wx:if="{{footbarState.tabStatus == 'historyOrders'}}" class="footbar-img" src="../../../image/my.png"></image>
-      <view class="title {{footbarState.tabStatus == 'historyOrders' ? 'active' : ''}}">我的</view>
+      <view class="title {{footbarState.tabStatus == 'historyOrders' ? 'active' : ''}}">我的订单</view>
     </navigator>
   </view>
 </template>
