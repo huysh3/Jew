@@ -247,7 +247,7 @@ var pageObject = {
           _this.inputModalCancel()
           _this.callPay(res.data.order_id)
         } else {
-          showModel('支付失败', res)
+          showModel('支付失败', res.data.errmsg)
         }
       }
     })
