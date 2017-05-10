@@ -43,6 +43,8 @@ var pageObject = {
     price: '',
     total_price: '',
     inputCaptcha: '',
+    buying_limitation: 0,
+    stock: 0,
     counter: 1,
     carousels: [
       'https://om536p71r.qnssl.com/tips_pic%20white.png',
@@ -160,7 +162,9 @@ var pageObject = {
           _this.setData({
             // shop_id: response.data.shop.id,
             product_id: response.data.id,
-            price: response.data.price
+            price: response.data.price,
+            buying_limitation: response.data.buying_limitation,
+            stock: response.data.stock
           })
           _this.setData({product: response.data})
         },
@@ -207,6 +211,14 @@ var pageObject = {
     })
   },  
   buyNowEvent: function() {
+    if (this.data.counter > this.data.stock) {
+      showModel('下单失败', '超出库存, 当前库存：' + this.data.stock)
+      return;
+    }
+    if (this.data.counter > this.data.buying_limitation) {
+      showModel('下单失败', '超出限购, 当前限购数量：' + this.data.buying_limitation)
+      return;
+    }
     this.setData({
       inputModalState: true,
       inputAddr: '',
@@ -228,12 +240,15 @@ var pageObject = {
         phone: _this.data.inputPhoneNumber,
         address: _this.data.inputAddr,
         receipt: _this.data.receipt
-        // 'phone', 'consignee', 'address', 'receipt'
       },
       success(res) {
-        showBusy('正在通信..');
-        _this.inputModalCancel()
-        _this.callPay(res.data)
+        if (res.data.errcode == '1') {
+          showBusy('正在通信..');
+          _this.inputModalCancel()
+          _this.callPay(res.data.order_id)
+        } else {
+          showModel('支付失败', res)
+        }
       }
     })
   },
