@@ -151,8 +151,12 @@ var pageObject = {
                   inputName: '',
                   inputPhoneNumber: '',
                   receipt: '0'
-                })              
-                _this.callPay(res.data.order_id)
+                })
+                if (res.data.errcode == '1') {
+                  _this.callPay(res.data.order_id)
+                } else {
+                  showModel('支付失败', res.data.errmsg)
+                }
             }
         }
     })    
