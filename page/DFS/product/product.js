@@ -82,8 +82,7 @@ var pageObject = {
     showBusy('正在通信..');
     var _this = this
     wx.request({
-      // url: domain + 'Home/order/addCart',
-      url: domain + 'Test/order/addCart',
+      url: domain + 'V1/order/addCart',
       method: 'get',
       data: {
         product_id: _this.data.product_id,
@@ -151,16 +150,13 @@ var pageObject = {
   getProductInfo: function(options) {
     var _this = this
     wx.request({
-        // url: domain + 'Home/weapp/product_info',
-        url: domain + 'Test/weapp/product_info',
+        url: domain + 'V1/weapp/product_info',
         data: {
           product_id : options.product_id,
-          // // shop_id: wx.getStorageSync('shop_id')        
         },
         method: 'get',
         success: (response) => {
           _this.setData({
-            // shop_id: response.data.shop.id,
             product_id: response.data.id,
             price: response.data.price,
             buying_limitation: response.data.buying_limitation,
@@ -230,7 +226,7 @@ var pageObject = {
   buyNow: function() {
     var _this = this
     wx.request({
-      url: domain + 'Test/order/buyNow',
+      url: domain + 'V1/order/buyNow',
       data: {
         product_id: _this.data.product_id,
         price: _this.data.price,
@@ -255,8 +251,7 @@ var pageObject = {
   callPay(order_id) {
     var _this = this
     wx.request({
-        url: domain + 'Test/Wechatpay/callPay',
-        // url: domain + 'Pay/Wechatpay/callPay',
+        url: domain + 'V1/Wechatpay/callPay',
         data: {
             order_id: order_id,
             uid: wx.getStorageSync('uid')

@@ -11,7 +11,7 @@ Page({
   getCityList() {
     let _this = this
     wx.request({
-      url: domain + 'Home/Shop/getCityList',
+      url: domain + 'V1/Shop/getCityList',
       success(res) {
         _this.setData({
           cityList: res.data

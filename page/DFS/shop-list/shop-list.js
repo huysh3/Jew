@@ -13,7 +13,7 @@ Page({
   getShopList(options) {
     let _this = this
     wx.request({
-      url: domain + 'Home/Shop/getShopList',
+      url: domain + 'V1/Shop/getShopList',
       data: {
         city: options.city
       },

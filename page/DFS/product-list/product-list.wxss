@@ -5,7 +5,8 @@
 
 .banner {
   width: 750rpx;
-  float:left;
+  height: 100rpx;
+  float: left;
 }
 
 /* .main-content {

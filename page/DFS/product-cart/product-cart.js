@@ -66,7 +66,7 @@ var pageObject = {
     var orderLists = []
     var _this = this
     wx.request({
-      url: domain + 'Home/weapp/cart_list',
+      url: domain + 'V1/weapp/cart_list',
       data: {
         uid: wx.getStorageSync('uid'),
         shop_id: wx.getStorageSync('shop_id')
@@ -135,7 +135,7 @@ var pageObject = {
     var _this = this
     showBusy('正在通信..');
     wx.request({
-        url: domain + 'Home/order/combineOrder',
+        url: domain + 'V1/order/combineOrder',
         data: {
             uid: wx.getStorageSync('uid'),
             consignee: _this.data.inputName,
@@ -152,7 +152,7 @@ var pageObject = {
                   inputPhoneNumber: '',
                   receipt: '0'
                 })              
-                _this.callPay(res.data)
+                _this.callPay(res.data.order_id)
             }
         }
     })    
@@ -201,7 +201,7 @@ var pageObject = {
       showBusy('正在通信..');
       var _this = this
       wx.request({
-          url: domain + 'Home/order/confirmOrder',
+          url: domain + 'V1/order/confirmOrder',
           data: {
               phone: _this.data.inputPhoneNumber,
               uid: wx.getStorageSync('uid'),
@@ -229,8 +229,7 @@ var pageObject = {
   callPay(order_id) {
       var _this = this
       wx.request({
-          url: domain + 'Test/Wechatpay/callPay',
-          // url: domain + 'Pay/Wechatpay/callPay',
+          url: domain + 'V1/Wechatpay/callPay',
           data: {
               order_id: order_id,
               uid: wx.getStorageSync('uid'),
@@ -291,7 +290,7 @@ var pageObject = {
     var _option = event.currentTarget.dataset.option
     var _index = event.currentTarget.dataset.index
     wx.request({
-      url: domain + 'Test/order/changeCartNumber',
+      url: domain + 'V1/order/changeCartNumber',
       data: {
         id: _id,
         option: _option,
@@ -322,7 +321,7 @@ var pageObject = {
     var targetId = event.currentTarget.dataset.id
     showBusy('通信中..')
     wx.request({
-      url: domain + 'Home/order/deleteOrder',
+      url: domain + 'V1/order/deleteOrder',
       data: {
         id : targetId,
         shop_id: wx.getStorageSync('shop_id')        

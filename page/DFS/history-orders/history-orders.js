@@ -40,8 +40,7 @@ Page({
     this.setData({ "footbarState.cartBadgeNum": wx.getStorageSync('cartBadgeNum') })
     this.setData({ 'shopInfo': wx.getStorageSync('shopInfo') })
     wx.request({
-      url: domain + 'Home/weapp/order_list',
-      // url: domain + 'Home/weapp/test',
+      url: domain + 'V1/weapp/order_list',
       data: {
         uid: wx.getStorageSync('uid')
       },

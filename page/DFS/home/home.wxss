@@ -52,7 +52,7 @@
 }*/
 
 .header {
-  height: 390rpx;
+  height: 388rpx;
 }
 
 .clearfix {
@@ -72,8 +72,7 @@
 
 .home-banner {
   width: 750rpx;
-  
-  height: 200rpx;
+  height: 388rpx;
   margin-top: -5rpx;
   float: left;
 }

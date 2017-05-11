@@ -30,8 +30,7 @@ Page({
   getClassList() {
     let _this = this
     wx.request({
-      // url: domain + 'Home/weapp/class_list',
-      url: domain + 'Test/weapp/class_list',
+      url: domain + 'V1/weapp/class_list',
       data: {
         shop_id: wx.getStorageSync('shop_id')
       },
@@ -48,7 +47,7 @@ Page({
   getArticalList() {
     let _this = this
     wx.request({
-      url: domain + 'Test/Weapp/getArticalList',
+      url: domain + 'V1/Weapp/getArticalList',
       success(res) {
         console.log('------------------------------------');
         _this.setData({

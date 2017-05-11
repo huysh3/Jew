@@ -54,7 +54,7 @@ Page({
   getBanner: function() {
     let _this = this;
     wx.request({
-      url: domain + '/Test/Banner/getBanner',
+      url: domain + 'V1/Banner/getBanner',
       success(res) {
         console.log('------------------------------------');
         console.log(res.data);
@@ -68,7 +68,7 @@ Page({
   getShopList: function() {
     var _this = this
     wx.request({
-      url: domain + 'Test/weapp/shopList',
+      url: domain + 'V1/weapp/shopList',
       success(res) {
         console.log(res.data)
         _this.setData({
@@ -102,7 +102,7 @@ Page({
   getSlideShow: function() {
     var _this = this
     wx.request({
-      url: domain + 'Test/Slideshow/getSlideShow',
+      url: domain + 'V1/Slideshow/getSlideShow',
       data: {
         shop_id: wx.getStorageSync('shop_id')
       },
@@ -132,7 +132,7 @@ Page({
   getShopInfo: function() {
     var _this = this
     wx.request({
-      url: domain + 'Test/weapp/shopInfo',
+      url: domain + 'V1/weapp/shopInfo',
       data: {
         shop_id: wx.getStorageSync('shop_id')
       },

@@ -35,7 +35,7 @@ var pageObject = {
   getProductList: function(options) {
     var _this = this
     wx.request({
-      url: domain + 'Test/weapp/product_list',
+      url: domain + 'V1/weapp/product_list',
       data: {
         class_name: options.class_name,
         shop_id: wx.getStorageSync('shop_id')

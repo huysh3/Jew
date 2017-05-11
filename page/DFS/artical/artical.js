@@ -10,7 +10,7 @@ Page({
   getArticalContent(options) {
     let _this = this
     wx.request({
-      url: domain + '/Test/Weapp/getArticalById',
+      url: domain + '/V1/Weapp/getArticalById',
       data: {
         artical_id: options.artical_id
       },

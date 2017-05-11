@@ -17,7 +17,7 @@ Page({
     handleSearchEvent: function() {
         var _this = this
         wx.request({
-            url: domain + 'Test/weapp/productSearch',
+            url: domain + 'V1/weapp/productSearch',
             data: {
                 shop_id: wx.getStorageSync('shop_id'),
                 name: _this.data.inputValue

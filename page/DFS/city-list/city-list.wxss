@@ -23,7 +23,7 @@
 
 .top-banner {
   width: 750rpx;
-  height: 181rpx;
+  height: 362rpx;
 }
 
 .item-content {
