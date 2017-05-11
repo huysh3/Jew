@@ -13,6 +13,7 @@ page {
 
 .header .slide-image {
   width: 750rpx;
+  height: 750rpx;
 }
 
 .product-info {
@@ -72,6 +73,7 @@ page {
 
 .security-image {
   width: 700rpx;
+  height: 114rpx;
   padding: 40rpx 25rpx;
   border-bottom: 1rpx solid #f0f0f0;
 }

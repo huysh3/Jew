@@ -7,6 +7,11 @@ page {
   background-color: #fbf9fe;
   height: 100%;
 }
+
+view {
+  font-family: "Hiragino Sans GB" !important;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -229,7 +234,7 @@ checkbox, radio{
 
 .dfs-banner {
   width: 750rpx;
-  height: 44rpx;
+  height: 100rpx;
 }
 
 

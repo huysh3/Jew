@@ -72,6 +72,7 @@
 
 .home-banner {
   width: 750rpx;
+  
   height: 200rpx;
   margin-top: -5rpx;
   float: left;
@@ -150,7 +151,7 @@
 .selected-content .item-img,
 .class-content .item-img {
   width: 200rpx;
-  height: 300rpx;
+  height: 200rpx;
 }
 
 .selected-content .item-title,
@@ -178,6 +179,7 @@
 
 .class-content .class-banner {
   width: 750rpx;
+  height: 410rpx;
 }
 
 .class-list-content .item-img {

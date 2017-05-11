@@ -1,6 +1,10 @@
 <view class="page">
   <image mode="widthFix" bindtap="routerGoHome" class="dfs-banner" src="{{shopInfo.header_banner}}"></image>
 
+  <view class="placeholder-img" wx:if="{{orderList.length == 0}}">
+    <image mode="widthFix" style="width: 750rpx; height: 624rpx; margin-top: 100rpx;" src="http://ww1.sinaimg.cn/large/006tNc79gy1ffhromo4odj30hp0eq0sn.jpg"></image>
+  </view>
+
   <view class="item-content" wx:for="{{orderList}}">
     <image mode="widthFix" class="item-image" src="{{item.product.order_banner}}"></image>
     <view class="desc-content">
@@ -17,8 +21,8 @@
     <image class="delete-btn" src="../../../image/x.png" data-id="{{item.order.id}}" catchtap="deleteOrder"></image>
   </view>
 
-  <view class="footbar-takeplace" style="background-color: #f0f0f0;"></view>
-  <view class="footbar-takeplace" style="background-color: #f0f0f0;"></view>
+  <view class="footbar-takeplace" style="background-color: rgb(238, 238, 238);"></view>
+  <view class="footbar-takeplace" style="background-color: rgb(238, 238, 238);"></view>
 
   <view class="footer-content">
     <view class="top-content">
