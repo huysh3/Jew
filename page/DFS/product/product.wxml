@@ -34,7 +34,7 @@
       <view class="left-part">
         <view class="total-price">CNY{{product.price * counter}}</view>
       </view>
-      <view class="right-part">
+      <view class="right-part">                          
         <view bindtap="decr" class="decr">-</view>
         <view class="number">{{counter}}</view>
         <view bindtap="incr" class="incr">+</view>

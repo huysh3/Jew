@@ -3,13 +3,18 @@
     <navigator open-type="redirectTo" url="/page/DFS/home/home" class="footbar-item">
       <image mode="widthFix" wx:if="{{footbarState.tabStatus != 'aboutDFS'}}" class="footbar-img" src="../../../image/home-2.png"></image>
       <image mode="widthFix" wx:if="{{footbarState.tabStatus == 'aboutDFS'}}" class="footbar-img" src="../../../image/home.png"></image>
-      <view class="title {{footbarState.tabStatus == 'aboutDFS' ? 'active' : ''}}">主页</view>
+      <view class="title {{footbarState.tabStatus == 'aboutDFS' ? 'active' : ''}}">主d页</view>
     </navigator>
     <navigator open-type="redirectTo" url="/page/DFS/class-list/class-list" class="footbar-item">
       <image mode="widthFix" wx:if="{{footbarState.tabStatus != 'classList'}}" class="footbar-img" src="../../../image/class-2.png"></image>
       <image mode="widthFix" wx:if="{{footbarState.tabStatus == 'classList'}}" class="footbar-img" src="../../../image/class.png"></image>
       <view class="title {{footbarState.tabStatus == 'classList' ? 'active' : ''}}">明星同款</view>
     </navigator>
+    <navigator open-type="redirectTo" url="/page/DFS/class-list/class-list" class="footbar-item">
+      <image mode="widthFix" wx:if="{{footbarState.tabStatus != 'classList'}}" class="footbar-img" src="../../../image/class-2.png"></image>
+      <image mode="widthFix" wx:if="{{footbarState.tabStatus == 'classList'}}" class="footbar-img" src="../../../image/class.png"></image>
+      <view class="title {{footbarState.tabStatus == 'classList' ? 'active' : ''}}">礼物</view>
+    </navigator>    
     <navigator open-type="redirectTo" url="/page/DFS/order-center/order-center" class="footbar-item">
       <image mode="widthFix" wx:if="{{footbarState.tabStatus != 'orderCenter'}}" class="footbar-img" src="../../../image/cart-2.png"></image>
       <image mode="widthFix" wx:if="{{footbarState.tabStatus == 'orderCenter'}}" class="footbar-img" src="../../../image/cart.png"></image>

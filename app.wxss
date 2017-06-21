@@ -237,7 +237,6 @@ checkbox, radio{
   height: 100rpx;
 }
 
-
 .scroll-view_H{
   white-space: nowrap;
 }

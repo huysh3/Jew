@@ -49,7 +49,7 @@ App({
               })
           },
           fail(error) {
-              showModel('登录失败', error);
+              showModel('获取数据失败', '网络超时，请退出重试');
           }
       });
   },
@@ -65,7 +65,7 @@ App({
         wx.setStorageSync('cartBadgeNum', res.data)
       },
       fail(error) {
-        showModel('获取数据失败', error)
+        showModel('获取数据失败', '网络超时，请退出重试')
       }
     });
   },

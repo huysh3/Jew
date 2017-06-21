@@ -1,5 +1,6 @@
 {
   "pages": [
+    "page/DFS/gift-finder/gift-finder",
     "page/DFS/home/home",
     "page/DFS/product/product",
     "page/DFS/order-center/order-center",
